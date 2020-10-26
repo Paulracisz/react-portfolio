@@ -1,0 +1,15 @@
+.card-img-top {
+    height: 15em;
+    object-fit: cover;
+
+}
+
+.card {
+    margin: 10px;
+}
+
+#card-box {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
