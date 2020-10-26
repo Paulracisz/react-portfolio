@@ -58,7 +58,7 @@ export default function Work() {
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">Tower Of Hanoi</h5>
-                            <p class="card-text">The Tower Of Hanoi is a puzzle in which you must transfer several different sized discs from one tower to another, without placing any larger discs on top of smaller ones. I created this puzzle, and turned it into a javascript web game.</p>
+                            <p class="card-text">The Tower Of Hanoi is a puzzle in which you must transfer several different sized discs from one tower to another, without placing any larger discs on top of smaller ones. I turned this puzzle into a javascript web game.</p>
                         </div>
                     </div>
                 </div>
