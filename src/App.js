@@ -7,7 +7,6 @@ import {
 import HomePage from "./components/HomePage.jsx"
 import FourZeroFour from "./components/FourZeroFour.jsx"
 import Work from "./components/Work.jsx"
-import Contact from "./components/Contact.jsx"
 import Resume from "./components/Resume.jsx"
 
 
@@ -21,7 +20,6 @@ function App() {
         <Route exact path="/react-portfolio"><HomePage /></Route>
         <Route exact path="/work"><Work/></Route>
         <Route exact path="/resume"><Resume/></Route>
-        <Route exact path="/contact"><Contact/></Route>
         <Route component={FourZeroFour} />
         </Switch>
     </Router>

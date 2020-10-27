@@ -1,0 +1,53 @@
+
+#big-p-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-text {
+    text-align: center;
+    padding: 5px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.progress {
+    margin: 15px;
+    height: 2.5em;
+}
+
+#profile-card {
+    height: 15em;
+}
+
+#Iam {
+    margin: 10px;
+}
+
+.logo {
+    margin: 15px;
+}
+
+.logo:hover {
+    box-shadow: yellow 2px 2px;
+    transition: 0.5 ease all;
+}
+
+@media screen and (max-width: 699px) {
+    #big {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+    }
+    #big-p-box {
+        flex-direction: column;
+        width: 25vw;
+    }
+
+    .card {
+        width: 25vw
+    }
+}
