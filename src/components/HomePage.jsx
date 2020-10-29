@@ -49,6 +49,12 @@ My knowledge of the full software engineering & development life cycle experienc
                 <div id="progress-card" class="card" style={{ width: "45em" }}>
                 <div  class="card-body" id="profile-body">
                 <h5 id="cl-title" class="card-title">Skills</h5>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style={{width: "60%"}} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Django Skill</div>
+</div>
+<div class="progress">
+  <div class="progress-bar bg-danger" role="progressbar" style={{width: "65%"}} aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python Skill</div>
+</div>
                 <div class="progress">
   <div class="progress-bar bg-info" role="progressbar" style={{width: "85%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Javascript Skill</div>
 </div>
@@ -56,10 +62,7 @@ My knowledge of the full software engineering & development life cycle experienc
   <div class="progress-bar bg-info" role="progressbar" style={{width: "85%"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">React Skill</div>
 </div>
 <div class="progress">
-  <div class="progress-bar bg-danger" role="progressbar" style={{width: "65%"}} aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python Skill</div>
-</div>
-<div class="progress">
-  <div class="progress-bar bg-danger" role="progressbar" style={{width: "60%"}} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Django Skill</div>
+  <div class="progress-bar bg-info" role="progressbar" style={{width: "95%"}} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">CSS Skill</div>
 </div>
             </div>
             </div>
