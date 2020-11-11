@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@master
       - name: install, build, and test
         run: |
-          npm install
-          npm build
-          npm test
+          yarn install
+          yarn lint
+          yarn build
+          yarn test
         env:
           CI: true
       - name: Deploy to production
@@ -23,7 +24,7 @@ jobs:
         env:
           AUTHOR: paulRacisz
           BUILD_PATH: public
-          GITHUB_PAGE_NAME: paulracisz.github.io/react-portfolio
+          GITHUB_PAGE_NAME: paulRacisz.github.io
           PA_TOKEN: ${{ secrets.PA_TOKEN }}
-          USERNAME: awibox
-          EMAIL: andrei@awb.pw
+          USERNAME: paulRacisz
+          EMAIL: paulieracisz@gmail.com
