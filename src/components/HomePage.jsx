@@ -35,7 +35,7 @@ export default function HomePage() {
                             <div class="card" style={{ width: "30em" }}>
                                 <div class="card-body">
                                     <h5 id="cl-title" class="card-title">Cover Letter</h5>
-                                    <p class="card-text">Dear Hiring Manager,
+                                    <p class="card-text">
 As an early career software engineering professional with some light technical experience, I am an ideal candidate for the Software Engineer position available with your company.  Please accept <a href="/resume">my resume</a> for your consideration.
 I am a motivated professional with a demonstrable record of helping organizations meet their goals.  My positive attitude, world-class work ethic, and attention to detail have helped me succeed in a variety of fast-paced environments.  I take my work seriously, and approach every undertaking with enthusiasm, diligence, and positivity. I am ready to tackle a challenging, professional position that makes excellent use of my multi-tasking, project coordination, engineering, organizational, and relationship management skills.  
 My strong communication skills and years of experience working with diverse groups allow me to move with ease and obtain commitments among clients and coworkers of varied backgrounds and different levels of responsibility.  I have the utmost respect for confidentiality, and approach sensitive matters with discretion and tact.  I am especially skilled at keeping operations running smoothly and efficiently in the midst of changes to technologies, procedures, or personnel. 
