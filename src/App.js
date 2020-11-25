@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/react-portfolio"><HomePage /></Route>
+        <Route path="/"><HomePage /></Route>
         <Route path="/work"><Work/></Route>
         <Route path="/resume"><Resume/></Route>
         <Route component={FourZeroFour} />
