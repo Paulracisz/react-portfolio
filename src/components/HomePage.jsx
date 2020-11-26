@@ -13,6 +13,7 @@ import B4Thumbnail from '../resources/b4thumbnail.png'
 import GOCThumbnail from '../resources/gocthumbnail.png'
 import MGThumbnail from '../resources/mgthumbnail.png'
 import TOHThumbnail from '../resources/tohthumbnail.png'
+import SLHThumbnail from '../resources/SLHthumbnail.png'
 import Skills from '../resources/Skills.png'
 import '../stylesheets/work.css'
 
@@ -118,7 +119,16 @@ My knowledge of the full software engineering & development life cycle experienc
                             <p class="text">The Tower Of Hanoi is a puzzle in which you must transfer several different sized discs from one tower to another, without placing any larger discs on top of smaller ones. I turned this puzzle into a javascript web game.</p>
                         </div>
                     </div>
+                    <div class="card-container" style={{ width: "15em" }}>
+                        <a href="https://paulracisz.gitlab.io/sports-lab-hard" target="_blank" rel="noreferrer">
+                        <img class="card-img" src={SLHThumbnail} alt="Card cap"/>
+                        </a>
+                        <div class="box-card">
+                            <h5 class="title">Sports Lab</h5>
+                            <p class="text">a Sports Game simulating a random shooting score between two teams, with sounds, icons, and shooting percentages!</p>
+                        </div>
                 </div>
+            </div>
             </div>
             <p id="bottom"></p>
         </>
