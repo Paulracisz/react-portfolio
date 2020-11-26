@@ -1,12 +1,43 @@
 
 #big-p-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+#cv-text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 25px;
+}
+
+#me-pic {
+    text-align: center;
+}
+
+#profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#cv-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-text {
     text-align: center;
     padding: 5px;
+    font-size: 14px;
 }
 
 .card-title {
@@ -18,7 +49,51 @@
     height: 2.5em;
 }
 
+.box-card {
+    border: 3px solid black;
+    border-radius: 8%;
+    padding: 10px;
+    height: 20em;
+    text-align: center;
+    margin: 10px;
+}
 
+.card-container {
+    margin: 10px;
+}
+
+#work-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#resume-img {
+    object-fit: cover;
+    width: 25em;
+    border: 3px solid black;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+.card-img {
+    height: 10em;
+    object-fit: cover;
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 
 #Iam {
     margin: 10px;
@@ -34,7 +109,50 @@
 }
 
 @media all and (max-width: 699px) {
-    body {
-        display:
+    #click-text {
+        font-size: 60%;
+        font-weight: bold;
+    }
+    /* #big {
+        display: flex;
+        flex-direction: column;
+    } */
+    #work-box {
+        display: flex;
+        flex-direction: column;
+    }
+    #resume-img {
+        width: 75%;
+        object-fit: contain;
+    }
+    #skills-img {
+        width: 100vw;
+        object-fit: contain;
+    }
+    #big-p-box {
+        width: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: condensed;
+    }
+
+    #cv-box {
+        width: 100vw;
+    }
+
+    #me-pic {
+        width:100vw;
+        object-fit: cover;
+    }
+    #profile-box {
+        width: 100vw;
+        
     }
 }
