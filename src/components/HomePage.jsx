@@ -33,6 +33,7 @@ export default function HomePage() {
                             <br/> hobbyist weight lifter, and passionate coder. <br/>His technical experience is vast, but he specializes in React,<br/> and Javascript.
                             <br/><br/>Phone Number: <br/>(734)- 624 - 9048<br/> Email: paulieracisz@gmail.com <br/> </p>
                                 <div id="social-links">
+                                    {/* The Github Logo, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
                                     <a href="https://github.com/Paulracisz" target="_blank" rel="noreferrer">
                                     <img className="logo" src={GitHubLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
                                     </a>
@@ -63,7 +64,7 @@ My knowledge of the full software engineering & development life cycle experienc
                     <img  id="skills-img" src={Skills} alt="skills bar graph"></img>
             </div>
             <div id="big">
-                <h2 id="resume">Resume Preview</h2>
+                <h2 class="black-h2" id="resume">Resume Preview</h2>
                 <a href={ResumeFile} download>Click here to download the full resume.</a>
                 <div class="resume-box">
                     <div class="resume-body">
@@ -71,8 +72,8 @@ My knowledge of the full software engineering & development life cycle experienc
                     </div>
                 </div>
             </div>
-            <h2>Work</h2>
-                <p id="click-text">Click on the Images of the projects to go to their deployed site.</p>
+            <h2 class="black-h2">Work</h2>
+                <p class="black-h2">Click on the Images of the projects to go to their deployed site.</p>
                 <div id="work-box">
                     <div class="card-container" style={{ width: "15em" }}>
                     <a href="https://paulracisz.gitlab.io/connect-four/" target="_blank" rel="noreferrer">
@@ -129,8 +130,8 @@ My knowledge of the full software engineering & development life cycle experienc
                         </div>
                 </div>
             </div>
+            <a href="#top" id="bottom">Back To The Top</a>
             </div>
-            <p id="bottom"></p>
         </>
     )
 }

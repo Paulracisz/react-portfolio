@@ -8,6 +8,15 @@
     margin: 10px;
 }
 
+#cv-title {
+    margin: 10px;
+}
+
+#Iam {
+    color: black;
+    text-shadow: none;
+}
+
 #card-box {
     display: inline-flex;
     flex-direction: row;

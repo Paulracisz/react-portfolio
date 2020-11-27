@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 #big-p-box {
     display: flex;
@@ -17,6 +22,8 @@
 
 #me-pic {
     text-align: center;
+    width: 50vw;
+    object-fit: contain;
 }
 
 #profile-box {
@@ -26,12 +33,25 @@
     text-align: center;
     justify-content: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    color: whitesmoke;
+}
+
+p, h2, h5 {
+    text-shadow: 1.8px 1.8px black;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 #cv-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    border: 2px solid black;
+    border-top: 0;
 }
 
 .card-text {
@@ -50,22 +70,38 @@
 }
 
 .box-card {
-    border: 3px solid black;
-    border-radius: 8%;
     padding: 10px;
     height: 20em;
     text-align: center;
     margin: 10px;
 }
 
+#skills-img {
+    margin: 10px;
+}
+
 .card-container {
     margin: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+}
+
+.black-h2 {
+    color: black;
+    text-shadow: none;
 }
 
 #work-box {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+
+#bottom {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 #resume-img {
@@ -79,6 +115,12 @@
 .card-img {
     height: 10em;
     object-fit: cover;
+}
+
+#social-links {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 30%;
 }
 
 
@@ -109,10 +151,6 @@ body::-webkit-scrollbar {
 }
 
 @media all and (max-width: 699px) {
-    #click-text {
-        font-size: 60%;
-        font-weight: bold;
-    }
     /* #big {
         display: flex;
         flex-direction: column;
@@ -122,7 +160,6 @@ body::-webkit-scrollbar {
         flex-direction: column;
     }
     #resume-img {
-        width: 75%;
         object-fit: contain;
     }
     #skills-img {
@@ -130,7 +167,7 @@ body::-webkit-scrollbar {
         object-fit: contain;
     }
     #big-p-box {
-        width: 25em;
+        width: 75vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -144,7 +181,7 @@ body::-webkit-scrollbar {
     }
 
     #cv-box {
-        width: 100vw;
+        width: 85vw;
     }
 
     #me-pic {
@@ -153,6 +190,11 @@ body::-webkit-scrollbar {
     }
     #profile-box {
         width: 100vw;
-        
+
+    }
+
+    .resume-box {
+        width: 100vw;
+        align-self: center;
     }
 }
