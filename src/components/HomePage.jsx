@@ -14,6 +14,7 @@ import GOCThumbnail from '../resources/gocthumbnail.png'
 import MGThumbnail from '../resources/mgthumbnail.png'
 import TOHThumbnail from '../resources/tohthumbnail.png'
 import SLHThumbnail from '../resources/SLHthumbnail.png'
+import CFTThumbnail from '../resources/cftthumbnail.png'
 import Skills from '../resources/Skills.png'
 import '../stylesheets/work.css'
 
@@ -83,7 +84,16 @@ My knowledge of the full software engineering & development life cycle experienc
                             <h5 id="title">Blink 4 Web Game</h5>
                             <p class="text">A local multiplayer Connect-4 mock web game, developed using only javascript, with stunning UI, and beautiful visuals.</p>
                         </div>
-                    </div>
+                        </div>
+                        <div class="card-container" style={{ width: "15em" }}>
+                    <a href="https://cftabernacle.com" target="_blank" rel="noreferrer">
+                        <img class="card-img" src={CFTThumbnail} alt="Card cap" />
+                        </a>
+                        <div class="box-card">
+                            <h5 id="title">Christian Faith Tabernacle Church Website</h5>
+                            <p class="text">A website that I created for my church with a contact page, donations, about us segment, pictures and snazzy styling!</p>
+                        </div>
+                        </div>
                     <div class="card-container" style={{ width: "15em" }}>
                         <a href="https://paulracisz.gitlab.io/photos-from-here" target="_blank" rel="noreferrer">
                         <img class="card-img" src={PFHThumbnail} alt="Card cap"/>
