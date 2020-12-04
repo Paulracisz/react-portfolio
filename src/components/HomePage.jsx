@@ -15,9 +15,9 @@ import MGThumbnail from '../resources/mgthumbnail.png'
 import TOHThumbnail from '../resources/tohthumbnail.png'
 import SLHThumbnail from '../resources/SLHthumbnail.png'
 import CFTThumbnail from '../resources/cftthumbnail.png'
+import GitLabLogo from '../resources/gitlab-logo.png'
 import Skills from '../resources/Skills.png'
 import '../stylesheets/work.css'
-
 
 export default function HomePage() {
     return (
@@ -34,7 +34,10 @@ export default function HomePage() {
                             <br/> hobbyist weight lifter, and passionate coder. <br/>His technical experience is vast, but he specializes in React,<br/> and Javascript.
                             <br/><br/>Phone Number: <br/>(734)- 624 - 9048<br/> Email: paulieracisz@gmail.com <br/> </p>
                                 <div id="social-links">
-                                    {/* The Github Logo, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
+                                    {/* The Github Logo, Gitlab, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
+                                    <a href="https://gitlab.com/paulracisz" target="_blank" rel="noreferrer">
+                                    <img className="logo" src={GitLabLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
+                                    </a>
                                     <a href="https://github.com/Paulracisz" target="_blank" rel="noreferrer">
                                     <img className="logo" src={GitHubLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
                                     </a>

@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -86,6 +87,14 @@ p, h2, h5 {
     border: 2px solid black;
 }
 
+.card-container:hover {
+    transition: all 0.8s ease;
+    box-shadow: 0 0 30px 15px #fff,  /* inner white */
+    0 0 50px 30px gold, /* middle magenta */
+    0 0 70px 40px goldenrod; /* outer cyan */
+
+}
+
 .black-h2 {
     color: black;
     text-shadow: none;
@@ -105,6 +114,13 @@ p, h2, h5 {
     font-size: 20px;
 }
 
+#bottom:hover {
+        transition: all 0.8 ease;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
 #resume-img {
     object-fit: cover;
     width: 25em;
@@ -121,7 +137,7 @@ p, h2, h5 {
 #social-links {
     background-color: whitesmoke;
     border: 2px solid black;
-    border-radius: 30%;
+    border-radius: 20%;
 }
 
 
