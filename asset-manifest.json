@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.be99740e.chunk.css",
-    "main.js": "/static/js/main.82815c51.chunk.js",
-    "main.js.map": "/static/js/main.82815c51.chunk.js.map",
+    "main.css": "/static/css/main.42ac415c.chunk.css",
+    "main.js": "/static/js/main.9f63c4da.chunk.js",
+    "main.js.map": "/static/js/main.9f63c4da.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0c990c8a.js",
     "runtime-main.js.map": "/static/js/runtime-main.0c990c8a.js.map",
     "static/js/2.cbd29415.chunk.js": "/static/js/2.cbd29415.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.c26439f8.chunk.js": "/static/js/3.c26439f8.chunk.js",
     "static/js/3.c26439f8.chunk.js.map": "/static/js/3.c26439f8.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.be99740e.chunk.css.map": "/static/css/main.be99740e.chunk.css.map",
+    "static/css/main.42ac415c.chunk.css.map": "/static/css/main.42ac415c.chunk.css.map",
     "static/js/2.cbd29415.chunk.js.LICENSE.txt": "/static/js/2.cbd29415.chunk.js.LICENSE.txt",
+    "static/media/Cow Say picture.d62b81e1.png": "/static/media/Cow Say picture.d62b81e1.png",
     "static/media/Paulie-1.b53c74a8.jpg": "/static/media/Paulie-1.b53c74a8.jpg",
     "static/media/SLHthumbnail.9c082cf2.png": "/static/media/SLHthumbnail.9c082cf2.png",
     "static/media/b4thumbnail.6527da22.png": "/static/media/b4thumbnail.6527da22.png",
@@ -29,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.0c990c8a.js",
     "static/js/2.cbd29415.chunk.js",
-    "static/css/main.be99740e.chunk.css",
-    "static/js/main.82815c51.chunk.js"
+    "static/css/main.42ac415c.chunk.css",
+    "static/js/main.9f63c4da.chunk.js"
   ]
 }
