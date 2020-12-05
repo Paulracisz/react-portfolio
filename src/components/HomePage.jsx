@@ -17,6 +17,7 @@ import SLHThumbnail from '../resources/SLHthumbnail.png'
 import CFTThumbnail from '../resources/cftthumbnail.png'
 import GitLabLogo from '../resources/gitlab-logo.png'
 import Skills from '../resources/Skills.png'
+import CowsayThumbnail from '../resources/Cow Say picture.png'
 import '../stylesheets/work.css'
 
 export default function HomePage() {
@@ -31,7 +32,7 @@ export default function HomePage() {
                         <div id="profile-box">
                             <h5 id="paul-title">Paul Racisz</h5>
                             <p id="paul-desc">Paul is an avid video game nerd, 
-                            <br/> hobbyist weight lifter, and passionate coder. <br/>His technical experience is vast, but he specializes in React,<br/> and Javascript.
+                            <br/> hobbyist weight lifter, and passionate coder. <br/>His technical experience is vast, but he specializes in React,<br/> and Javascript.<br/> (Also he's sick of talking about himself in the third person.)
                             <br/><br/>Phone Number: <br/>(734)- 624 - 9048<br/> Email: paulieracisz@gmail.com <br/> </p>
                                 <div id="social-links">
                                     {/* The Github Logo, Gitlab, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
@@ -143,6 +144,11 @@ My knowledge of the full software engineering & development life cycle experienc
                         </div>
                 </div>
             </div>
+                <figure id="figbox">
+                <p id="caption">This application is a Django database, that uses a terminal package called Cow-Say that displays an ASCII cow <br/>with a speech bubble containing a user's input. In this way, we have made a webpage that allows you to type into an input field <br/>to make the cow say whatever you'd like!</p>
+                <img id="cow" src={CowsayThumbnail} alt="a project"></img>
+                
+                </figure>          
             <a href="#top" id="bottom">Back To The Top</a>
             </div>
         </>

@@ -95,6 +95,30 @@ p, h2, h5 {
 
 }
 
+#cow {
+    margin: 30px;
+}
+
+#figbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cow:hover {
+    transition: all 0.8s ease;
+    box-shadow: 0 0 30px 15px #fff,  /* inner white */
+    0 0 50px 30px black, /* middle magenta */
+    0 0 70px 40px black; /* outer cyan */
+}
+
+#caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+}
+
 .black-h2 {
     color: black;
     text-shadow: none;
@@ -208,6 +232,10 @@ body::-webkit-scrollbar {
     #profile-box {
         width: 100vw;
 
+    }
+
+    #figbox {
+        width: 100vw;
     }
 
     .resume-box {
