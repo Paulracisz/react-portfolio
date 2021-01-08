@@ -15,6 +15,7 @@ import MGThumbnail from '../resources/mgthumbnail.png'
 import TOHThumbnail from '../resources/tohthumbnail.png'
 import SLHThumbnail from '../resources/SLHthumbnail.png'
 import CFTThumbnail from '../resources/cftthumbnail.png'
+import STThumbnail from '../resources/STthumbnail.png'
 import GitLabLogo from '../resources/gitlab-logo.png'
 import Skills from '../resources/Skills.png'
 import CowsayThumbnail from '../resources/Cow Say picture.png'
@@ -141,6 +142,15 @@ My knowledge of the full software engineering & development life cycle experienc
                         <div class="box-card">
                             <h5 class="title">Sports Lab</h5>
                             <p class="text">a Sports Game simulating a random shooting score between two teams, with sounds, icons, and shooting percentages!</p>
+                        </div>
+                </div>
+                <div class="card-container" style={{ width: "15em" }}>
+                        <a href="https://paulracisz.github.io/sales-table/" target="_blank" rel="noreferrer">
+                        <img class="card-img" src={STThumbnail} alt="Card cap"/>
+                        </a>
+                        <div class="box-card">
+                            <h5 class="title">Sales Table</h5>
+                            <p class="text">A javascript, HTML, and CSS project that aims to simulate what a real dynamic table of sales data is like. The table can sort chronologically, by each quarter of the year, alphabetically, ascending, and descending by sales number.</p>
                         </div>
                 </div>
             </div>
