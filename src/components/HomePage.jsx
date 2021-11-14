@@ -1,11 +1,8 @@
 import React from "react";
-import NavLinks from "./NavLinks.jsx";
-import Me from '../resources/Paulie-1.jpg'
 import '../stylesheets/homepage.css'
 import GitHubLogo from "../resources/githublogo.png"
 import LinkedInLogo from "../resources/linkedinlogo.png"
 import FaceBookLogo from "../resources/facebooklogo.png"
-import Resume from '../resources/resume.png';
 import '../stylesheets/resume.css';
 import ResumeFile from '../resources/resumefile.pdf'
 import PFHThumbnail from '../resources/pfhthumbnail.png'
@@ -17,27 +14,33 @@ import SLHThumbnail from '../resources/SLHthumbnail.png'
 import CFTThumbnail from '../resources/cftthumbnail.png'
 import STThumbnail from '../resources/STthumbnail.png'
 import GitLabLogo from '../resources/gitlab-logo.png'
-import Skills from '../resources/Skills.png'
-import CowsayThumbnail from '../resources/Cow Say picture.png'
 import '../stylesheets/work.css'
+import Typing from 'react-typing-animation';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import FrontEndCert from '../resources/frontendcert.png'
+import FullStackCert from '../resources/Fullstackcert.PNG'
+import{ init } from 'emailjs-com';
+import { ContactUs } from "./contact";
+init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
     return (
         <>
             <div id="big">
-                <NavLinks />
-                <h2 id="Iam">I am Paul Racisz.</h2>
-                <div id="big-p-box">
-                    <div>
-                        <img id="me-pic" src={Me} alt="Card cap" />
-                        <div id="profile-box">
-                            <h5 id="paul-title">Paul Racisz</h5>
-                            <p id="paul-desc">Paul is an avid video game nerd, 
-                            <br/> hobbyist weight lifter, and passionate coder. <br/>His technical experience is vast, but he specializes in React,<br/> and Javascript.<br/> (Also he's sick of talking about himself in the third person.)
-                            <br/><br/>Phone Number: <br/>(734)- 624 - 9048<br/> Email: paulieracisz@gmail.com <br/> </p>
-                                <div id="social-links">
-                                    {/* The Github Logo, Gitlab, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
-                                    <a href="https://gitlab.com/paulracisz" target="_blank" rel="noreferrer">
+                <div id="parallax">
+                <Typing><h2 id="Iam">Hi, I'm Paul.</h2></Typing>
+                <Typing speed="10"><h3 id="Iam">I am a junior level software engineer with experience in responsive mobile and web developement.</h3></Typing>
+                </div>
+                <div id="parallax2">
+                <img id="me-pic" src="https://media-exp1.licdn.com/dms/image/D4E03AQF14GhN9bKa4g/profile-displayphoto-shrink_800_800/0/1636382127145?e=1642032000&v=beta&t=OcnNsVhVzghkg8GbX1gIzmzfZ5_zlquT-fjiCfBQVO4" alt="Card cap" />
+                <Carousel>
+                <div id="text-box">
+                <div id="nav-links-about-me">
+                    <h2 id="abo">About Me</h2>
+                          {/* The Github Logo, Gitlab, Facebook Logo, and Linked Logo, are all registered trademarks of their respective owners, I do not own these. */}
+                          <div id="linksbox">
+                          <a href="https://gitlab.com/paulracisz" target="_blank" rel="noreferrer">
                                     <img className="logo" src={GitLabLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
                                     </a>
                                     <a href="https://github.com/Paulracisz" target="_blank" rel="noreferrer">
@@ -49,38 +52,71 @@ export default function HomePage() {
                                     <a href="https://www.facebook.com/paulie.racisz" target="_blank" rel="noreferrer">
                                     <img className="logo" src={FaceBookLogo} alt="facebook logo" style={{width: "2em", height: "2em"}}/>
                                     </a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div id="cv-box">
-                                    <h5 id="cv-title">Cover Letter</h5>
-                                    <p id="cv-text">
-As an early career software engineering professional with some light technical experience, I am an ideal candidate for the Software Engineer <br/>position available with your company. Please accept <a href="#resume">my resume</a> for your consideration.<br/>
-I am a motivated professional with a demonstrable record of helping organizations meet their goals.<br/>  My positive attitude, world-class work ethic, and attention to detail have helped me succeed in a variety of fast-paced environments.<br/>  I take my work seriously, and approach every undertaking with enthusiasm, diligence, and positivity.<br/> I am ready to tackle a challenging, professional position that makes excellent use of my multi-tasking, project coordination, engineering, organizational,<br/> and relationship management skills.  
-My strong communication skills and years of experience working with diverse groups allow me<br/> to move with ease and obtain commitments among clients and coworkers of varied backgrounds and different levels of responsibility.<br/>  I have the utmost respect for confidentiality, and approach sensitive matters with discretion and tact.<br/>  I am especially skilled at keeping operations running smoothly and efficiently in the midst of changes to technologies, procedures, or personnel. <br/>
-My knowledge of the full software engineering & development life cycle experience have prepared me well for a challenging role with your company.<br/>  I look forward to meeting with you to discuss how I can help your organization meet its objectives in 2020 and beyond.<br/>  Please don’t hesitate to contact me with any questions.<br/>  Thanks so much for your time and consideration. <br/> Sincerely, <br/>
-<p style={{fontFamily: "Gabriola", fontSize: "2.5em", textAlign: "center",}}>Paul Racisz</p>
-
-</p>
-                        </div>
-                    </div>
-            </div>
-                    <div>
-                    <img  id="skills-img" src={Skills} alt="skills bar graph"></img>
-            </div>
-            <div id="big">
-                <h2 class="black-h2" id="resume">Resume Preview</h2>
-                <a href={ResumeFile} download>Click here to download the full resume.</a>
-                <div class="resume-box">
-                    <div class="resume-body">
-                    <img id="resume-img" src={Resume} alt="resume" />
-                    </div>
+                                    </div>
                 </div>
-            </div>
-            <h2 class="black-h2">Work</h2>
-                <p class="black-h2">Click on the Images of the projects to go to their deployed site.</p>
-                <div id="work-box">
+                <div id="desc-box">
+                <p id="paul-desc">My present position is with Firefly Integrations, a firm that specializes in creating unique touch screen gadgets for luxury RVs.
+I'm a junior-level software engineer currently living in Indiana who wants to put my skills to use in a fast-paced development environment.
+I specialize on Javascript frameworks like Angular and React for mobile and web development.
+at Firefly Integrations, we design systems for luxury RVs (Recreational Vehicles) that handle a variety of functions including awnings, lights, HVAC, and locks! </p>
+                <p id="paul-desc">Kenzie Academy was where I started my software development career. Their 12-month full-stack academic vocational-style program gave me the knowledge and abilities I needed to work with a number of modern software platforms, which I applied to my first job at Firefly.
+During my time at Kenzie, I sharpened my skills in React, Javascript, Python, API technologies, backend servers, front-end UI, and a variety of other web technologies.  </p>
+                </div>
+                <a  id="learnmore" href="https://www.fireflyint.com/" target="_blank" rel="noreferrer">Learn more about Firefly Integrations</a>
+                <a id="learnmore" href="https://www.kenzie.academy/"  target="_blank" rel="noreferrer">Learn more about Kenzie Academy</a>
+                <p id="paul-desc">Click the radio buttons below to view the next slides.</p>
+                
+                </div>
+                <div id="text-box-desc">
+                <div id="parallax2">
+                    <div id="resumeexp">
+                    <h2 id="abo">Experience</h2>
+                <a href={ResumeFile} download id="download">Download My Resume</a>
+                    </div>
+                    <div id="big-exp-box">
+                    <div id="desc-box-exp">
+                <h1 id="header">Sofware Engineer<br/>@Firefly Integrations</h1>
+                <h2 id="header2">May 2021 - Present</h2>
+                <p id="paul-desc"><ul><li>Implemented new features for in-coach standards like Aqua-Hot water heater indicators that show when the water heater systems are active and running.</li><br/><li>Diagnose and resolve legacy code bugs without the use of documentation, as well as refactoring and optimization of legacy code.</li><br/><li>Peer review and diagnose bugs in other team members code, using an understanding of commonly found QA issues to improve coding standards and practices.</li></ul></p>
+</div>
+<div id="desc-box-exp">
+                <h1 id="header">Sofware Engineer Student<br/>@Kenzie Academy</h1>
+                <h2 id="header2">October 2019 - October 2020</h2>
+                <p id="paul-desc"><ul><li>Twelve-month project-based software engineer program focused on project-management, team building , GitHub implementation, hands on coaching , and interactive instruction.</li><br/>
+<li>Worked in a team environment as a project manager to create a twitter clone, using proficiency in Node.js, HTML, CSS, Javascript and React to implement user authentication, message posting, and  toggle like system.</li><br/>
+<li>As project manager, delegated tasks as a constituent to optimize workflow and maintain realistic two week sprint deadline acquisition.</li><br/></ul>
+</p>
+</div>
+<div id="desc-box-exp">
+                <h1 id="header">Salesman<br/>@Menards</h1>
+                <h2 id="header2">September 2019 - April 2020</h2>
+                <p id="paul-desc"><ul><li>Follow up with customers on roofing, siding, deck and exterior lumber architecture.</li><br/>
+<li>Advise guests on their home improvement projects; providing development estimates and excellent design strategy.</li></ul>
+ </p>
+</div>
+</div>
+                </div>
+                </div>
+                <div>
+                <div id="desc-box-exp">
+                <h2 id="abo">Certifications</h2>
+                <div id="cert-imgs">
+                <div id="cert-tiny">
+                <img id="certs" src={FrontEndCert}/>
+                <h2 id="header">Front-End Web Development</h2>
+                </div>
+                <div id="cert-tiny">
+                <img id="certs" src={FullStackCert}/>
+                <h2 id="header">Full-Stack Web Development</h2>
+                </div>
+                </div>
+</div>
+                </div>
+            </Carousel>
+                </div>
+            <div id="parallax3">
+                <h2 id="abo2">Projects</h2>
+<div id="work-box">
                     <div class="card-container" style={{ width: "15em" }}>
                     <a href="https://paulracisz.gitlab.io/connect-four/" target="_blank" rel="noreferrer">
                         <img class="card-img" src={B4Thumbnail} alt="Card cap" />
@@ -154,12 +190,35 @@ My knowledge of the full software engineering & development life cycle experienc
                         </div>
                 </div>
             </div>
-                <figure id="figbox">
-                <p id="caption">This application is a Django database, that uses a terminal package called Cow-Say that displays an ASCII cow <br/>with a speech bubble containing a user's input. In this way, we have made a webpage that allows you to type into an input field <br/>to make the cow say whatever you'd like!</p>
-                <img id="cow" src={CowsayThumbnail} alt="a project"></img>
-                
-                </figure>          
-            <a href="#top" id="bottom">Back To The Top</a>
+                </div>
+                <div id="contact-box">
+                    <h2 id="header2">Contact Me</h2>
+                    <ContactUs/>
+                    <p id="emailp">Or you can email me directly at paulieracisz@gmail.com</p>
+                </div>
+                <div id="footer">
+                    <div id="footer-row">
+                    <a href={ResumeFile} download id="download" className="footerDownload">Download My Resume</a>
+                    <div id="linksbox" class="footerlinks">
+                          <a href="https://gitlab.com/paulracisz" target="_blank" rel="noreferrer">
+                                    <img className="logo" src={GitLabLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
+                                    </a>
+                                    <a href="https://github.com/Paulracisz" target="_blank" rel="noreferrer">
+                                    <img className="logo" src={GitHubLogo} alt="github logo" style={{width: "2em", height: "2em"}}/>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/paul-racisz-745b11196/" target="_blank" rel="noreferrer">
+                                    <img className="logo" src={LinkedInLogo} alt="linkedin logo" style={{width: "2em", height: "2em"}}/>
+                                    </a>
+                                    <a href="https://www.facebook.com/paulie.racisz" target="_blank" rel="noreferrer">
+                                    <img className="logo" src={FaceBookLogo} alt="facebook logo" style={{width: "2em", height: "2em"}}/>
+                                    </a>
+                                    </div>
+                                    </div>
+                                    <div id="footer-row">
+                    <p id="footerp">By Paul Racisz. Proudly hand-crafted <br/>with React, HTML, CSS and JSX by me!</p>
+                    <p id="footerp">Follow me on Social Media!</p>
+                    </div>
+</div>
             </div>
         </>
     )
