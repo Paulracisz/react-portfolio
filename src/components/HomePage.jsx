@@ -20,6 +20,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import FrontEndCert from '../resources/frontendcert.png'
 import FullStackCert from '../resources/Fullstackcert.PNG'
+import MePic from '../resources/mepic.JPG';
+import CIThumbnail from '../resources/CIThumbnail.png';
+import CALThumbnail from '../resources/CALThumbnail.png'
+import DUThumbnail from '../resources/daggerfallunitythumb.PNG'
 import{ init } from 'emailjs-com';
 import { ContactUs } from "./contact";
 init("user_8H2okSIPMyJBrfkGMvZv4");
@@ -33,7 +37,7 @@ export default function HomePage() {
                 <Typing speed="10"><h3 id="Iam">I am a junior level software engineer with experience in responsive mobile and web developement.</h3></Typing>
                 </div>
                 <div id="parallax2">
-                <img id="me-pic" src="https://media-exp1.licdn.com/dms/image/D4E03AQF14GhN9bKa4g/profile-displayphoto-shrink_800_800/0/1636382127145?e=1642032000&v=beta&t=OcnNsVhVzghkg8GbX1gIzmzfZ5_zlquT-fjiCfBQVO4" alt="Card cap" />
+                <img id="me-pic" src={MePic} alt="Card cap" />
                 <Carousel>
                 <div id="text-box">
                 <div id="nav-links-about-me">
@@ -87,13 +91,6 @@ During my time at Kenzie, I sharpened my skills in React, Javascript, Python, AP
 <li>As project manager, delegated tasks as a constituent to optimize workflow and maintain realistic two week sprint deadline acquisition.</li><br/></ul>
 </p>
 </div>
-<div id="desc-box-exp">
-                <h1 id="header">Salesman<br/>@Menards</h1>
-                <h2 id="header2">September 2019 - April 2020</h2>
-                <p id="paul-desc"><ul><li>Follow up with customers on roofing, siding, deck and exterior lumber architecture.</li><br/>
-<li>Advise guests on their home improvement projects; providing development estimates and excellent design strategy.</li></ul>
- </p>
-</div>
 </div>
                 </div>
                 </div>
@@ -117,13 +114,13 @@ During my time at Kenzie, I sharpened my skills in React, Javascript, Python, AP
             <div id="parallax3">
                 <h2 id="abo2">Projects</h2>
 <div id="work-box">
-                    <div class="card-container" style={{ width: "15em" }}>
-                    <a href="https://paulracisz.gitlab.io/connect-four/" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={B4Thumbnail} alt="Card cap" />
+    <div class="card-container" style={{ width: "15em" }}>
+                    <a href="https://paulracisz.github.io/Collecting-The-Infinity-Stones/" target="_blank" rel="noreferrer">
+                        <img class="card-img" src={CIThumbnail} alt="Card cap" />
                         </a>
                         <div class="box-card">
-                            <h5 id="title">Blink 4 Web Game</h5>
-                            <p class="text">A local multiplayer Connect-4 mock web game, developed using only javascript, with stunning UI, and beautiful visuals.</p>
+                            <h5 id="title">Collect The Infinity Stones</h5>
+                            <p class="text">A React app that tracks how much time as elapsed since the last visit to the website, and stores that as a cookie. As the time goes up, more infinity stones appear on the Infinity Gauntlet.</p>
                         </div>
                         </div>
                         <div class="card-container" style={{ width: "15em" }}>
@@ -134,52 +131,7 @@ During my time at Kenzie, I sharpened my skills in React, Javascript, Python, AP
                             <h5 id="title">Christian Faith Tabernacle Church Website</h5>
                             <p class="text">A website that I created for my church with a contact page, donations, about us segment, pictures and snazzy styling!</p>
                         </div>
-                        </div>
-                    <div class="card-container" style={{ width: "15em" }}>
-                        <a href="https://paulracisz.gitlab.io/photos-from-here" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={PFHThumbnail} alt="Card cap"/>
-                        </a>
-                        <div class="box-card">
-                            <h5 class="title">Photos From Here</h5>
-                            <p class="text">Photos From Here utilizes the Geolocation API to parse the users Coordinates, and then communicates with the Flickr API, to serve up photos that were taken near them.</p>
-                        </div>
-                    </div>
-                    <div class="card-container" style={{ width: "15em" }}>
-                    <a href="https://paulracisz.gitlab.io/game-of-chance" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={GOCThumbnail} alt="Card cap" />
-                        </a>
-                        <div class="box-card">
-                            <h5 class="title">Game Of Chance</h5>
-                            <p class="text">Game of Chance is a dungeon themed rock paper scissors game that is played against an AI opponent, you must fight an evil wizard to escape the dungeon and win your freedom.</p>
-                        </div>
-                    </div>
-                    <div class="card-container" style={{ width: "15em" }}>
-                    <a href="https://paulracisz.gitlab.io/mazeproject" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={MGThumbnail} alt="Card cap" />
-                        </a>
-                        <div class="box-card">
-                            <h5 class="title">Maze Project</h5>
-                            <p class="text">Maze Game is a simple, adorable and cheeky game that uses keyboard inputs to guide a dog through a maze to find his bone.</p>
-                        </div>
-                    </div>
-                    <div class="card-container" style={{ width: "15em" }}>
-                    <a href="https://paulracisz.gitlab.io/tower-of-hanoi/" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={TOHThumbnail} alt="Card cap" />
-                        </a>
-                        <div class="box-card">
-                            <h5 class="title">Tower Of Hanoi</h5>
-                            <p class="text">The Tower Of Hanoi is a puzzle in which you must transfer several different sized discs from one tower to another, without placing any larger discs on top of smaller ones. I turned this puzzle into a javascript web game.</p>
-                        </div>
-                    </div>
-                    <div class="card-container" style={{ width: "15em" }}>
-                        <a href="https://paulracisz.gitlab.io/sports-lab-hard" target="_blank" rel="noreferrer">
-                        <img class="card-img" src={SLHThumbnail} alt="Card cap"/>
-                        </a>
-                        <div class="box-card">
-                            <h5 class="title">Sports Lab</h5>
-                            <p class="text">a Sports Game simulating a random shooting score between two teams, with sounds, icons, and shooting percentages!</p>
-                        </div>
-                </div>
+                        </div> 
                 <div class="card-container" style={{ width: "15em" }}>
                         <a href="https://paulracisz.github.io/sales-table/" target="_blank" rel="noreferrer">
                         <img class="card-img" src={STThumbnail} alt="Card cap"/>
@@ -189,6 +141,16 @@ During my time at Kenzie, I sharpened my skills in React, Javascript, Python, AP
                             <p class="text">A javascript, HTML, and CSS project that aims to simulate what a real dynamic table of sales data is like. The table can sort chronologically, by each quarter of the year, alphabetically, ascending, and descending by sales number.</p>
                         </div>
                 </div>
+                    <div class="card-container" style={{ width: "15em" }}>
+                    <a href="https://paulracisz.gitlab.io/connect-four/" target="_blank" rel="noreferrer">
+                        <img class="card-img" src={B4Thumbnail} alt="Card cap" />
+                        </a>
+                        <div class="box-card">
+                            <h5 id="title">Blink 4 Web Game</h5>
+                            <p class="text">A local multiplayer Connect-4 mock web game, developed using only javascript, with stunning UI, and beautiful visuals.</p>
+                        </div>
+                        </div>
+                
             </div>
                 </div>
                 <div id="contact-box">
