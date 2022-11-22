@@ -286,6 +286,8 @@ h5 {
 .card-img {
     height: 10em;
     object-fit: cover;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 
@@ -641,6 +643,30 @@ label {
         align-items: center;
     }
 }
+
+.symbols {
+    height: 2em;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.card-p {
+    font-size: 1.5em;
+    color:whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+.card-title {
+    display: flex;
+    background-color: #1f232a;
+    flex-direction: row;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
 
 
 
