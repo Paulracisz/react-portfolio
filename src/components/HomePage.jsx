@@ -5,14 +5,8 @@ import LinkedInLogo from "../resources/linkedinlogo.png";
 import FaceBookLogo from "../resources/facebooklogo.png";
 import "../stylesheets/resume.css";
 import ResumeFile from "../resources/resumefile.pdf";
-import PFHThumbnail from "../resources/pfhthumbnail.png";
 import B4Thumbnail from "../resources/b4thumbnail.png";
-import GOCThumbnail from "../resources/gocthumbnail.png";
-import MGThumbnail from "../resources/mgthumbnail.png";
-import TOHThumbnail from "../resources/tohthumbnail.png";
-import SLHThumbnail from "../resources/SLHthumbnail.png";
 import CFTThumbnail from "../resources/cftthumbnail.png";
-import STThumbnail from "../resources/STthumbnail.png";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import "../stylesheets/work.css";
 import Typing from "react-typing-animation";
@@ -22,19 +16,60 @@ import FrontEndCert from "../resources/frontendcert.png";
 import FullStackCert from "../resources/Fullstackcert.PNG";
 import MePic from "../resources/mepic.JPG";
 import CIThumbnail from "../resources/CIThumbnail.png";
-import CALThumbnail from "../resources/CALThumbnail.png";
-import DUThumbnail from "../resources/daggerfallunitythumb.PNG";
 import { init } from "emailjs-com";
 import { ContactUs } from "./contact";
 import reactSymbol from "../resources/reactLogo.png";
-import javaScriptSymbol from '../resources/javascriptlogo.png'
-import javaSymbol from '../resources/javasymbol.png'
-import pythonSymbol from '../resources/python.png'
-import cowSay from '../resources/cowsayy.jpg'
-import snakeGameThumbnail from '../resources/snakeGameThumbnail.png';
+import javaScriptSymbol from "../resources/javascriptlogo.png";
+import javaSymbol from "../resources/javasymbol.png";
+import pythonSymbol from "../resources/python.png";
+import cowSay from "../resources/cowsayy.jpg";
+import snakeGameThumbnail from "../resources/snakeGameThumbnail.png";
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
+  let isEnabled = false;
+  function toggleTickerEvent(e) {
+    e.preventDefault();
+    let vars = document.querySelector(':root')
+    let nightModeDiv = document.getElementById("night-mode-toggle")
+    if (!isEnabled) {
+      // set to light mode
+      nightModeDiv.style.justifyContent = "flex-start";
+      vars.style.setProperty("--background-color","white");
+      vars.style.setProperty("--border-color","white");
+      vars.style.setProperty("--desc-text-color","black");
+      vars.style.setProperty("--abo-text","black");
+      vars.style.setProperty("--text-shadow-about","white");
+      vars.style.setProperty("--box-shadow-hover-color","black");
+      vars.style.setProperty("--caro-slide-img-color","black");
+      vars.style.setProperty("--night-mode-toggle-color","#09aee9");
+      vars.style.setProperty("--border-logo","black");
+      vars.style.setProperty("--header-color","black");
+      vars.style.setProperty("--border-bottom-h2-color","red");
+      vars.style.setProperty("--download-border-color","black");
+      vars.style.setProperty("--download-text-color","black");
+      vars.style.setProperty("--dot-color","black");
+    } else if (isEnabled) {
+      // set to night mode
+      nightModeDiv.style.justifyContent = "flex-end";
+      vars.style.setProperty("--background-color","#1f232a");
+      vars.style.setProperty("--border-color","#1f232a");
+      vars.style.setProperty("--desc-text-color","white");
+      vars.style.setProperty("--abo-text","white");
+      vars.style.setProperty("--text-shadow-about","black");
+      vars.style.setProperty("--box-shadow-hover-color","white");
+      vars.style.setProperty("--caro-slide-img-color","white");
+      vars.style.setProperty("--night-mode-toggle-color","#0900ff");
+      vars.style.setProperty("--border-logo","white");
+      vars.style.setProperty("--header-color","white");
+      vars.style.setProperty("--border-bottom-h2-color","#09aee9");
+      vars.style.setProperty("--download-border-color","white");
+      vars.style.setProperty("--download-text-color","white");
+      vars.style.setProperty("--dot-color","white");
+    }
+    isEnabled = !isEnabled;
+  }
+
   return (
     <>
       <div id="big">
@@ -51,6 +86,12 @@ export default function HomePage() {
         </div>
         <div id="parallax2">
           <img id="me-pic" src={MePic} alt="Card cap" />
+          <div id="night-mode-toggle-flex">
+            <div id="night-mode-toggle">
+              {" "}
+              <div id="toggle-ticker" onClick={toggleTickerEvent}></div>
+            </div>
+          </div>
           <Carousel>
             <div id="text-box">
               <div id="nav-links-about-me">
@@ -229,11 +270,11 @@ export default function HomePage() {
                 <h2 id="abo">Certifications</h2>
                 <div id="cert-imgs">
                   <div id="cert-tiny">
-                    <img id="certs" src={FrontEndCert} alt="front-end-cert"/>
+                    <img id="certs" src={FrontEndCert} alt="front-end-cert" />
                     <h2 id="header">Front-End Web Development</h2>
                   </div>
                   <div id="cert-tiny">
-                    <img id="certs" src={FullStackCert} alt="back-end-cert"/>
+                    <img id="certs" src={FullStackCert} alt="back-end-cert" />
                     <h2 id="header">Full-Stack Web Development</h2>
                   </div>
                 </div>
@@ -263,14 +304,15 @@ export default function HomePage() {
               <div class="box-card">
                 <h5 id="title">Collect The Infinity Stones</h5>
                 <p class="text">
-                  A React app tracking elapsed time since last visit using cookie storage, react hooks to increment timers, conditional rendering and flashy comic book style.
+                  A React app tracking elapsed time since last visit using
+                  cookie storage, react hooks to increment timers, conditional
+                  rendering and flashy comic book style.
                 </p>
               </div>
             </div>
 
-            
             <div class="card-container" style={{ width: "15em" }}>
-            <div class="card-title">
+              <div class="card-title">
                 <p class="card-p">React</p>
                 <img
                   src={reactSymbol}
@@ -288,13 +330,15 @@ export default function HomePage() {
               <div class="box-card">
                 <h5 id="title">Christian Faith Tabernacle Church</h5>
                 <p class="text">
-                  Professional looking website used by Christian Faith Tabernacle Church that features, interactive forms, navigation, and effectively styled informational text.
+                  Professional looking website used by Christian Faith
+                  Tabernacle Church that features, interactive forms,
+                  navigation, and effectively styled informational text.
                 </p>
               </div>
             </div>
-            
+
             <div class="card-container" style={{ width: "15em" }}>
-            <div class="card-title card-title-js">
+              <div class="card-title card-title-js">
                 <p class="card-p">Java</p>
                 <img
                   src={javaSymbol}
@@ -312,13 +356,15 @@ export default function HomePage() {
               <div class="box-card">
                 <h5 class="title">Classic Snake Game With Java</h5>
                 <p class="text">
-                    The classic snake game reimagined in Java. Built using the Java Graphics library for rendering. Complete with a score board, main menu, and gameover screen.
+                  The classic snake game reimagined in Java. Built using the
+                  Java Graphics library for rendering. Complete with a score
+                  board, main menu, and gameover screen.
                 </p>
               </div>
             </div>
-            
+
             <div class="card-container" style={{ width: "15em" }}>
-            <div class="card-title card-title-js">
+              <div class="card-title card-title-js">
                 <p class="card-p">Vanilla JS</p>
                 <img
                   src={javaScriptSymbol}
@@ -337,13 +383,14 @@ export default function HomePage() {
                 <h5 id="title">Connect 4 Board Game</h5>
                 <p class="text">
                   A local multiplayer Connect-4 web game, developed using
-                  javascript, with UX design, keyboard controls, and data algorithim calculations.
+                  javascript, with UX design, keyboard controls, and data
+                  algorithim calculations.
                 </p>
               </div>
             </div>
-            
+
             <div class="card-container" style={{ width: "15em" }}>
-            <div class="card-title card-title-js">
+              <div class="card-title card-title-js">
                 <p class="card-p">Django/Python</p>
                 <img
                   src={pythonSymbol}
@@ -359,8 +406,13 @@ export default function HomePage() {
                 <img class="card-img" src={cowSay} alt="Card cap" />
               </a>
               <div class="box-card">
-                <h5 id="title">Django Python <br></br>Cow-Say</h5>
-                <p class="text">This application is a Django database, that uses a terminal package called Cow-Say that displays an ASCII cow with a speech bubble containing a user's input.
+                <h5 id="title">
+                  Django Python <br></br>Cow-Say
+                </h5>
+                <p class="text">
+                  This application is a Django database, that uses a terminal
+                  package called Cow-Say that displays an ASCII cow with a
+                  speech bubble containing a user's input.
                 </p>
               </div>
             </div>
