@@ -27,11 +27,12 @@ import snakeGameThumbnail from "../resources/snakeGameThumbnail.png";
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
-  let isEnabled = false;
+  let isEnabled = true;
   function toggleTickerEvent(e) {
     e.preventDefault();
     let vars = document.querySelector(':root')
     let nightModeDiv = document.getElementById("night-mode-toggle")
+    let body = document.querySelector("body")
     if (!isEnabled) {
       // set to light mode
       nightModeDiv.style.justifyContent = "flex-start";
@@ -49,6 +50,9 @@ export default function HomePage() {
       vars.style.setProperty("--download-border-color","black");
       vars.style.setProperty("--download-text-color","black");
       vars.style.setProperty("--dot-color","black");
+      vars.style.setProperty("--label-text-color","black");
+      vars.style.setProperty("--email-p","black");
+      body.style.setProperty("filter","brightness(100%)");
     } else if (isEnabled) {
       // set to night mode
       nightModeDiv.style.justifyContent = "flex-end";
@@ -66,6 +70,9 @@ export default function HomePage() {
       vars.style.setProperty("--download-border-color","white");
       vars.style.setProperty("--download-text-color","white");
       vars.style.setProperty("--dot-color","white");
+      vars.style.setProperty("--label-text-color","white");
+      vars.style.setProperty("--email-p","white");
+      body.style.setProperty("filter","brightness(75%)");
     }
     isEnabled = !isEnabled;
   }
@@ -86,10 +93,13 @@ export default function HomePage() {
         </div>
         <div id="parallax2">
           <img id="me-pic" src={MePic} alt="Card cap" />
+          <div id="night-mode-text-flex">
           <div id="night-mode-toggle-flex">
             <div id="night-mode-toggle">
               {" "}
               <div id="toggle-ticker" onClick={toggleTickerEvent}></div>
+            </div>
+            <p id="paul-desc">Try Night Mode!</p>
             </div>
           </div>
           <Carousel>
@@ -421,9 +431,6 @@ export default function HomePage() {
         <div id="contact-box">
           <h2 id="header2">Contact Me</h2>
           <ContactUs />
-          <p id="emailp">
-            Or you can email me directly at paulieracisz@gmail.com
-          </p>
         </div>
         <div id="footer">
           <div id="footer-row">
