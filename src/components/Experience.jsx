@@ -1,4 +1,6 @@
-import lynxScreen from '../resources/app_image.png'
+import vegaTouchApp from '../resources/vegatouchapp.jpg'
+import vegaTouchAppHvac from '../resources/vegatouchcapphvac.jpg'
+import trumaAventa from '../resources/trumaAventa.png'
 import Biweeklysprints from './BiweeklySpints'
 import Contributions from './Contributions'
 import '../stylesheets/experience.css'
@@ -80,10 +82,10 @@ export default function Experience(){
                 <div className = "fresh-water"></div> 
                 <div className = "experience-grid"> 
                     <div className='lynx-photo'>
-                        <img className='lynx-screen' src = {lynxScreen} alt = "lynx screen from firefly integrations"></img>
+                        <img className='lynx-screen' src = {vegaTouchApp} alt = "vegatouch mira app screenshot from firefly integrations"></img>
                     </div> 
                     <div className = "lynx-description">
-                        <p className = "lynx-text">This is the lynx screen, It is used to control the RVs that firefly sells. I program the screens</p>
+                        <p className = "lynx-text">This is the VegaTouch Mira App, It is used to control the systems in RV Motor Homes. Firefly programs these apps for RV manufacturers, who sell them as a premium add-on to a luxury motorhome purchase.</p>
                     </div>     
                 </div>
                 <Biweeklysprints />

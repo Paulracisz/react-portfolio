@@ -87,6 +87,10 @@
     opacity: 0;
 }
 
+.truma-photo {
+    height: 15em;
+}
+
 .lynx-description{ 
     display: flex; 
     align-items: center;
