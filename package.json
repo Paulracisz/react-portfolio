@@ -5,26 +5,24 @@
   "private": true,
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.7.1",
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^4.5.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "gsap": "^3.11.4",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.3",
     "lottie-react": "^2.3.1",
-    "nodemailer": "^6.7.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "nodemailer": "^6.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-download-link": "^2.3.0",
-    "react-mail-form": "^2.1.0",
-    "react-responsive-carousel": "^3.2.22",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "4.0.0",
-    "react-typing-animation": "^1.6.2",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "5.0.1",
+    "web-vitals": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -52,6 +50,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^5.0.0"
   }
 }
