@@ -8,6 +8,10 @@
     right:50%;
 } */
 
+img:hover {
+    cursor: default;
+}
+
 .fold-down{ 
     transform: rotateX(-90deg);
     color: white;

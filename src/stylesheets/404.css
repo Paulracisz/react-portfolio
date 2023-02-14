@@ -5,9 +5,10 @@
 
 }
 
-h2 {
+h1 {
     color: whitesmoke;
     font-size: 52px;
+    font-weight: bold;
     text-align: center;
     margin: 15px;
 }

@@ -11,8 +11,8 @@ export default function Work() {
                 <NavLinks />
                 <h2>Resume Preview</h2>
                 <a href={ResumeFile} download>Click here to download the full resume.</a>
-                <div class="card">
-                    <div class="card-body">
+                <div className="card">
+                    <div className="card-body">
                     <img src={Resume} alt="resume" />
                     </div>
                 </div>

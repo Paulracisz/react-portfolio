@@ -18,13 +18,22 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} id="contactformbox"onSubmit={sendEmail}>
-      <label>Name</label>
+      <label className="text">Name
+      <br/>
       <input type="text" name="user_name" />
-      <label>Email</label>
+      </label>
+      <label className="email">Email
+      <br/>
       <input type="email" name="user_email" />
-      <label>Message</label>
+      </label>
+      <label className="message">Message
+      <br/>
       <textarea name="message" />
-      <input id="submit" type="submit" value="Send" />
+      </label>
+      <label className="submit">Submit
+      <br/>
+      <input className="submit" type="submit" value="Send" />
+      </label>
     </form>
   );
 };

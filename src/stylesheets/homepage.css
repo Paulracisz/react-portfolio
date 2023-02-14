@@ -2,7 +2,7 @@
     --background-color: white;
     --border-color: white;
     --border-bottom-h2-color: red;
-    --text-shadow-about: white;
+    --text-shadow-about: black;
     --h5-border-color: black;
     --card-container-border-color: black;
     --resume-img-color: black;
@@ -10,20 +10,20 @@
     --social-links-border-color: black;
     --download-border-color: black;
     --download-text-color: black;
-    --header-color: black;
+    --header-color: white;
     --desc-text-color: black;
     --dot-color: black;
     --border-logo: black;
     --input-border: black;
-    --contact-box-gradient: linear-gradient(90deg, #bbc8dd 50%, #6c7486 50%);
+    --contact-box-gradient: linear-gradient(90deg, #c7c1c1 50%, #191a1b 50%);
     --box-shadow-hover-color: black;
     --card-p-color: whitesmoke;
     --text-shadow-card: black;
     --card-title-color: #1f232a;
-    --abo-text: black;
+    --abo-text: white;
     --caro-slide-img-color: black;
     --night-mode-toggle-color: #09aee9;
-    --label-text-color: black;
+    --label-text-color: white;
     --email-p: black;
 }
 
@@ -84,7 +84,6 @@ hr {
 }
 
 #parallax2 {
-    background-color: var(--background-color);
     width: 100vw;
     margin: auto;
     text-align: center;
@@ -260,7 +259,7 @@ h5 {
     padding: 25px;
 }
 
-#footer-row {
+.footer-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -279,10 +278,24 @@ h5 {
     justify-content: center;
 }
 
-#footerp {
+.footerp {
     margin-right: 50px;
     font-size: 15px;
     color: var(--abo-text)
+}
+
+#axe-logo {
+    height: 3em;
+}
+
+#axe-link {
+    text-decoration: underline;
+    color: rgb(0, 0, 145)
+}
+
+.bottom-text {
+    color: black;
+    text-align: center;
 }
 
 .box-card {
@@ -384,6 +397,22 @@ h5 {
     object-fit: cover;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+.card-img:hover {
+    cursor: pointer;
+}
+
+.card-text {
+    color: black;
+    font-size: 1em;
+}
+
+.title {
+    font-size: 1.5em;
+    border-bottom: 1.5px solid black;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -550,6 +579,10 @@ body::-webkit-scrollbar-thumb {
     width: 25px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 #condetails {
     display: flex;
     flex-direction: column;
@@ -574,7 +607,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-#submit {
+.submit {
     width: 25%;
     margin: 20px;
 }
@@ -587,6 +620,7 @@ input {
 label {
     font-weight: bold;
     font-size: 18px;
+    text-align: center;
     color: var(--label-text-color);
     text-shadow: 1px 1px var(--text-shadow-about);
 }
@@ -650,7 +684,7 @@ label {
         font-size: 20px;
     }
 
-    #footer-row {
+    .footer-row {
         flex-direction: column;
         align-items: center;
         justify-content: center;

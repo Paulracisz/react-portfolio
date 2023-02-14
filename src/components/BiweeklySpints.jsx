@@ -2,14 +2,14 @@ import * as LottiePlayer from "@lottiefiles/lottie-player";
 import {useEffect, useRef} from 'react'
 import animationData from "../resources/lottieAnimations/104286-coding-screen.json"
 import gsap from 'gsap'
-import Typing from "react-typing-animation";
+// import Typing from "react-typing-animation";
 import "../stylesheets/biweekly.css"
 export default function Biweeklysprints(){
-    const options = { 
-        animationData: animationData, 
-        loop: false, 
-        autoplay: false,
-    }
+    // const options = { 
+    //     animationData: animationData, 
+    //     loop: false, 
+    //     autoplay: false,
+    // }
 
     const animationRef = useRef()
     // const animation = useLottie(options)

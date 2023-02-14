@@ -5,10 +5,10 @@ export default function NavLinks() {
         <>
          <div id="social-links">
                                 </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <a class="nav-link active" href="#resume">Resume</a>
-                <a class="nav-link active" href="#work-box">Work</a>
-                <a class="nav-link active" href="#bottom">Bottom</a>
+            <nav className="navbar navbar-dark bg-dark">
+                <a className="nav-link active" href="#resume">Resume</a>
+                <a className="nav-link active" href="#work-box">Work</a>
+                <a className="nav-link active" href="#bottom">Bottom</a>
             </nav>
         </>
     )

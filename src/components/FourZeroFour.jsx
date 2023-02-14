@@ -19,11 +19,11 @@ export default function FourZeroFour() {
   return (
     <>
       <div id="big">
-        <h2>
+        <h1>
           404
           <br />
           Page not found.
-        </h2>
+        </h1>
         <div id="fade-box-flex">
           <div id="fade-box"></div>
           <img

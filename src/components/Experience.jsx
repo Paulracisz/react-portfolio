@@ -1,6 +1,6 @@
 import vegaTouchApp from '../resources/vegatouchapp.jpg'
-import vegaTouchAppHvac from '../resources/vegatouchcapphvac.jpg'
-import trumaAventa from '../resources/trumaAventa.png'
+// import vegaTouchAppHvac from '../resources/vegatouchcapphvac.jpg'
+// import trumaAventa from '../resources/trumaAventa.png'
 import Biweeklysprints from './BiweeklySpints'
 import Contributions from './Contributions'
 import '../stylesheets/experience.css'
