@@ -71,7 +71,7 @@ export default function Experience(){
             <h1 className = "experience-text">Experience</h1>
             <div className='fold-down-container'>
                 <div className='fold-down'> 
-                    <h2 className = "fold-down-text">Fire Fly Integrations</h2>
+                    <h2 className = "fold-down-text">Firefly Integrations</h2>
                     <p className = "underline"></p>
                 </div>
                 <div className='fold-down-2'> 
