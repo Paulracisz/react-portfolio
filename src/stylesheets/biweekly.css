@@ -1,0 +1,24 @@
+.biweek-grid-container{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.biweek-text-container{ 
+    display: flex; 
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.biweek-text{ 
+    color: whitesmoke; 
+    align-self: center;
+    font-size: 45px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.lottie-animation{ 
+    margin-bottom: 50px;
+}

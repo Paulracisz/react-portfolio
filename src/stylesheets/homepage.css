@@ -32,8 +32,12 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-image: url(https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-color: #111013;
     background-position: cover;
+}
+
+#big { 
+    position: relative;
 }
 
 #big-p-box {
@@ -57,13 +61,23 @@ hr {
     width: 100%;
 }
 
+.divider{ 
+    height: 175vh
+}
+
 #parallax {
     width: 100vw;
-    background-image: url("/src/resources/pexels-lukas-574071.jpg");
+    display: flex;
+    flex-direction: row;
+    background-color:#111013;
     background-position: center;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
-    height: 30vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
     background-attachment: fixed;
     background-position: center;
     border-bottom: 10px var(--border-color);
@@ -109,15 +123,26 @@ hr {
     padding: 10px;
     line-height: 25px;
 }
+#pic-flex {
+    display: flex;
+    background-color: white;
+    overflow-y: hidden;
+    border-radius: 50%;
+}
 
 #me-pic {
     text-align: center;
     object-fit: cover;
-    width: auto;
-    border: 10px var(--border-color) solid;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
-    margin-top: -100px;
+    transform: translateY(8%)
 }
+
+#me-pic:hover {
+    cursor: default;
+}
+
 
 #profile-box {
     display: flex;
@@ -138,11 +163,12 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    align-self: flex-end;
 }
 
 #night-mode-toggle {
-    width: 8.5em;
-    height: 3.5em;
+    width: 5.5em;
+    height: 2.5em;
     padding: 5px;
     background: var(--night-mode-toggle-color);
     border-radius: 500px; display: flex;
@@ -154,8 +180,8 @@ hr {
 }
 
 #toggle-ticker {
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     border: 1px solid white;
     background-color: white;
     transition: all 0.3s ease;
@@ -383,7 +409,27 @@ body::-webkit-scrollbar-thumb {
 
 #Iam {
     margin: 10px;
-    text-align: center;
+    width:50%;
+    z-index: 2;
+    position: relative;
+    background: url("../resources/youfoundthekitten.png") -20px -20px no-repeat;
+    color: transparent;
+    -webkit-text-stroke: 1px gray;
+    background-position: -2000px 0px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5em;
+    text-align: left;
+}
+
+#scroller-div {
+    position: absolute;
+    z-index: 1;
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-W-Q7_l1OoxY%2FUWAJSrtvn_I%2FAAAAAAAASVM%2FeMqye-hpAu4%2Fs1600%2Fworld-s-cutest-kitten.jpg&f=1&nofb=1&ipt=2af7013c56d9f9417875db82f9371f6a59e05f248f3dd4d54ac0f049266dd4f5&ipo=images) -20px -20px no-repeat;
+    left: -100vw;
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
 }
 
 #linksbox {
@@ -690,8 +736,8 @@ label {
     }
 
     #me-pic {
-        width: 50vw;
-        height: 50vw;
+        width: 75vw;
+        height: 75vw;
         object-fit: cover;
     }
 

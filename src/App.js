@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
+  Routes,
   Route,
 } from 'react-router-dom';
 import HomePage from "./components/HomePage.jsx"
@@ -16,12 +17,12 @@ import Resume from "./components/Resume.jsx"
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/"><HomePage /></Route>
-        <Route path="/work"><Work/></Route>
-        <Route path="/resume"><Resume/></Route>
-        <Route component={FourZeroFour} />
-        </Switch>
+        <Routes>
+          <Route path="/" element = {<HomePage /> }></Route>
+          <Route path="/work" element = {<Work/>}></Route>
+          <Route path="/resume" element = {<Resume/>}></Route>
+          <Route path = "*" element={<FourZeroFour />} />
+        </Routes>
     </Router>
   )
 };

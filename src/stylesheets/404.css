@@ -2,8 +2,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 52px;
+    text-align: center;
+    margin: 15px;
+}
+
+#fade-box {
+    position: absolute;
+    width: 760px;
+    height: 400px;
+    background-color: black;
+}
+
+#fade-box-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ralof:hover {
+    cursor: default;
+}
+
+#backhome {
+        font-size: 52px;
+        text-align: center;
+        margin: 15px;
 }
 
 img {
