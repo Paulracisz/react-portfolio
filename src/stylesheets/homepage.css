@@ -293,6 +293,10 @@ h5 {
     color: rgb(0, 0, 145)
 }
 
+#axe-link:hover {
+    color: blue;
+}
+
 .bottom-text {
     color: black;
     text-align: center;

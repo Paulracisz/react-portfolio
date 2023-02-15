@@ -33,6 +33,7 @@ export default function Education() {
   return (
     <>
       <div id="big-container">
+        <h1 className = "education-text">Education</h1>
         <a href="https://kenzie.snhu.edu/" target="_blank" rel="noreferrer">
           <img alt="kenzie academy logo" id="ka-logo" src={KALogo}></img>
         </a>

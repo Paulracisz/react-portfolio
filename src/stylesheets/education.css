@@ -46,3 +46,7 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.education-flex {
+    font-size: 45px
+}

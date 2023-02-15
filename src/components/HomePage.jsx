@@ -348,9 +348,9 @@ export default function HomePage() {
             <p className="footerp bottom-text">
               This website passes the <img id="axe-logo" alt="the axe logo" src={AxeLogo}></img><a id="axe-link" href="https://www.deque.com/axe/devtools/"
                 target="_blank"
-                rel="noreferrer">Axe Web Accessibility</a> <br/>Test for maximum accessibility and conforms<br/>to best practices.
+                rel="noreferrer">Axe Web Accessibility</a> <br/>Test for maximum accessibility and conforms<br/>to best practices.<br/>
+                Created by Paul Racisz.
             </p>
-            <p className="footerp bottom-text">Follow me on Social Media!</p>
           </div>
         </div>
       </div>
