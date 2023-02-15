@@ -3,12 +3,12 @@
 Welcome to my portfolio website, built using React! This website is designed to showcase my skills and experience as a developer, and provide a glimpse into some of the projects I've worked on.
 ## Table of Contents
 
-- Features
-- Technologies Used
-- Getting Started
-- Usage
-- Contributing
-- License
+- [Features](#features)
+- [Technologies Used](#Technologies Used)
+- [Getting Started](#Getting Started)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [License](#License)
 
 ## Features
 
@@ -28,6 +28,7 @@ This website is built using the following technologies:
 - HTML
 - CSS
 - JavaScript
+- Green Sock
 
 ## Getting Started
 
