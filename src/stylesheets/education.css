@@ -50,3 +50,17 @@
 .education-flex {
     font-size: 45px
 }
+
+/* Most Mobile */
+@media all and (max-width: 699px) {
+ 
+#ka-text {
+    font-size: 16px;
+    width: 100%;
+}
+
+
+#ka-pic-and-text-flex {
+    flex-direction: column;
+}
+}

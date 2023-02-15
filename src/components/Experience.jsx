@@ -51,6 +51,7 @@ export default function Experience(){
 
         gsap.to(".lynx-photo", { 
             scrollTrigger: { 
+                trigger: ".lynx-photo",
                 start: 1500,
             }, 
             duration: 1,
@@ -60,6 +61,7 @@ export default function Experience(){
 
         gsap.to('.lynx-description', { 
             scrollTrigger: { 
+                trigger: ".lynx-description",
                 start: 1500, 
             },
             duration: 1, 

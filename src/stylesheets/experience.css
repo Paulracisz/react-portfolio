@@ -12,7 +12,7 @@ img:hover {
     cursor: default;
 }
 
-.fold-down{ 
+.fold-down {
     transform: rotateX(-90deg);
     color: white;
     width: auto;
@@ -20,17 +20,7 @@ img:hover {
     perspective: 1200px;
 }
 
-.fold-down-2{ 
-    transform: rotateX(-90deg);
-    color: white;
-    width: auto;
-    border-radius: 10px;
-    perspective: 1200px;
-    margin-bottom: 50px;
-
-}
-
-.fold-down-3{ 
+.fold-down-2 {
     transform: rotateX(-90deg);
     color: white;
     width: auto;
@@ -40,18 +30,28 @@ img:hover {
 
 }
 
-.underline{ 
+.fold-down-3 {
+    transform: rotateX(-90deg);
+    color: white;
+    width: auto;
+    border-radius: 10px;
+    perspective: 1200px;
+    margin-bottom: 50px;
+
+}
+
+.underline {
     display: block;
     position: absolute;
     bottom: 1;
-    left: 0; 
-    width: 0; 
+    left: 0;
+    width: 0;
     height: calc(2px);
     background-color: whitesmoke;
 }
 
-.fold-down-text{ 
-    color:whitesmoke;
+.fold-down-text {
+    color: whitesmoke;
     font-size: 45px;
 }
 
@@ -59,33 +59,33 @@ img:hover {
     font-size: 35px;
 }
 
-.fold-down-container{ 
- 
+.fold-down-container {
+
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 }
 
-.experience-container{ 
+.experience-container {
     background-color: #111013;
-    color: whitesmoke; 
+    color: whitesmoke;
 
 }
 
-.experience-text{ 
+.experience-text {
     font-size: 45px
 }
 
-.experience-grid{ 
+.experience-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
     font-size: 35px;
 }
 
-.lynx-photo{ 
+.lynx-photo {
 
     transform: translateX(-1000px);
     opacity: 0;
@@ -95,15 +95,30 @@ img:hover {
     height: 15em;
 }
 
-.lynx-description{ 
-    display: flex; 
+.lynx-description {
+    display: flex;
     align-items: center;
     justify-content: center;
     transform: translateX(1000px);
     opacity: 0;
-    
+
 }
 
-.lynx-text{ 
+.lynx-text {
     color: whitesmoke
+}
+
+/* Most Mobile */
+@media all and (max-width: 699px) {
+    .fold-down-text {
+        font-size: 25px;
+    }
+
+    .fold-down-text-smaller {
+        font-size: 15px;
+    }
+
+    img {
+        height: 5em;
+    }
 }
