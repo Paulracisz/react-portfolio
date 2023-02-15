@@ -1,0 +1,23 @@
+.bug-container{ 
+    height: 300vh; 
+    width: 100vw;
+}
+
+.bug-box{ 
+    position: fixed;
+    border: 5px solid salmon;
+    height: 100vh; 
+    width: 100vw;
+    scale: 0;
+    overflow: hidden;
+}
+
+.bug{ 
+    height: 50px;
+    width: 50px;
+    position: absolute
+}
+
+.bug:hover{ 
+    fill: blue
+}
