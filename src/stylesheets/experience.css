@@ -82,6 +82,7 @@ img:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
+    margin: 25px;
     font-size: 35px;
 }
 
@@ -101,7 +102,6 @@ img:hover {
     justify-content: center;
     transform: translateX(1000px);
     opacity: 0;
-
 }
 
 .lynx-text {

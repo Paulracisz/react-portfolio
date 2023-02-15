@@ -87,6 +87,9 @@ export default function Experience(){
                         <p className = "lynx-text">This is the VegaTouch Mira App. I build the interface.</p>
                     </div>     
                 </div>
+                <div className='fold-down-3'> 
+                    <h3 className='fold-down-text-smaller'>So what features do I contribute?</h3>
+                </div>
                 <Contributions />
             </div> 
                 
