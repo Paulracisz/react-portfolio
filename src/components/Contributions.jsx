@@ -3,9 +3,6 @@ import "../stylesheets/contributions.css";
 import '../stylesheets/experience.css'
 // images
 import vegaTouchAppHvac from "../resources/vegatouchcapphvac.jpg";
-import trumaAventa from "../resources/trumaAventa.png";
-import truTank from "../resources/trutanktransparent.png";
-import tanks from "../resources/veagtouchtanks.jpg";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,7 +13,8 @@ export default function Contributions() {
     gsap.registerPlugin(ScrollTrigger)
     gsap.to(".hvac-photo", { 
       scrollTrigger: { 
-          start: 2400,
+          trigger: ".hvac-photo",
+          start: "bottom 100%",
       }, 
       duration: 1,
       transform: "translateX(0px)",
@@ -25,7 +23,8 @@ export default function Contributions() {
 
   gsap.to('.hvac-p', { 
       scrollTrigger: { 
-          start: 2400, 
+          trigger: ".hvac-p",
+          start: "bottom 100%",
       },
       duration: 1, 
       transform: 'translateX(0px)',

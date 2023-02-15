@@ -13,7 +13,8 @@ export default function Education() {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to("#img-cover-div", { 
           scrollTrigger: { 
-              start: 3400,
+          trigger: "#img-cover-div",
+          start: "bottom 100%",
           }, 
           duration: 2,
           transform: "translateX(-4000px)",
@@ -22,7 +23,8 @@ export default function Education() {
 
       gsap.to("#ka-logo", { 
         scrollTrigger: { 
-            start: 3400,
+          trigger: "#ka-logo",
+          start: "bottom 100%",
         }, 
         duration: 2,
         rotate: "1440deg",

@@ -59,6 +59,10 @@
     width: 100%;
 }
 
+#img-cover-div {
+    height: 450px;
+}
+
 
 #ka-pic-and-text-flex {
     flex-direction: column;

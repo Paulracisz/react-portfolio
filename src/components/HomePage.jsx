@@ -11,9 +11,6 @@ import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from '../resources/axelogoapproved.png';
 import "../stylesheets/work.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
-// import FrontEndCert from "../resources/frontendcert.png";
-// import FullStackCert from "../resources/Fullstackcert.PNG";
 import MePic from "../resources/metalking3.png";
 import CIThumbnail from "../resources/CIThumbnail.png";
 import { init } from "emailjs-com";
@@ -26,9 +23,7 @@ import cowSay from "../resources/cowsayy.jpg";
 import snakeGameThumbnail from "../resources/snakeGameThumbnail.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import Blob from '../resources/blob-haikei.svg';
-import Experience from '../components/Experience'
-import { Carousel } from "bootstrap";
+import Experience from '../components/Experience';
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
@@ -164,7 +159,7 @@ export default function HomePage() {
                 <img className="card-img" src={CIThumbnail} alt="Card cap" />
               </a>
               <div className="box-card">
-                <h3 className="title">Collect The Infinity Stones</h3>
+                <h2 className="title">Collect The Infinity Stones</h2>
                 <p className="card-text">
                   A React app tracking elapsed time since last visit using
                   cookie storage, react hooks to increment timers, conditional
@@ -349,7 +344,7 @@ export default function HomePage() {
             <p className="footerp bottom-text">
               This website passes the <img id="axe-logo" alt="the axe logo" src={AxeLogo}></img><a id="axe-link" href="https://www.deque.com/axe/devtools/"
                 target="_blank"
-                rel="noreferrer">Axe Web Accessibility</a> <br/>Test for maximum accessibility and conforms<br/>to best practices.<br/>
+                rel="noreferrer">Axe Web Accessibility</a> <br/>test for maximum accessibility and conforms<br/>to best practices.<br/>
                 © 2023 Paul Racisz Licensed under the MIT License
             </p>
           </div>
