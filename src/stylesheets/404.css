@@ -39,3 +39,16 @@ h1 {
 img {
     height: 25em;
 }
+
+/* Most Mobile */
+@media all and (max-width: 699px) {
+    img {
+        height: 10em;
+    }
+
+    #fade-box {
+        position: absolute;
+        height: 10em;
+        background-color: black;
+    }
+}

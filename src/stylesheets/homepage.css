@@ -36,7 +36,7 @@ body {
     background-position: cover;
 }
 
-#big { 
+#big {
     position: relative;
 }
 
@@ -61,7 +61,7 @@ hr {
     width: 100%;
 }
 
-.divider{ 
+.divider {
     height: 175vh
 }
 
@@ -69,7 +69,7 @@ hr {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color:#111013;
+    background-color: #111013;
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -122,6 +122,7 @@ hr {
     padding: 10px;
     line-height: 25px;
 }
+
 #pic-flex {
     display: flex;
     background-color: white;
@@ -170,7 +171,8 @@ hr {
     height: 2.5em;
     padding: 5px;
     background: var(--night-mode-toggle-color);
-    border-radius: 500px; display: flex;
+    border-radius: 500px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 15px;
@@ -291,6 +293,10 @@ h5 {
 #axe-link {
     text-decoration: underline;
     color: rgb(0, 0, 145)
+}
+
+#axe-link:hover {
+    color: blue;
 }
 
 .bottom-text {
@@ -438,11 +444,12 @@ body::-webkit-scrollbar-thumb {
 
 #Iam {
     margin: 10px;
-    width:50%;
+    width: 50%;
     z-index: 2;
     position: relative;
     background: url("../resources/youfoundthekitten.png") -20px -20px no-repeat;
     color: transparent;
+    padding-bottom: 5px;
     -webkit-text-stroke: 1px gray;
     background-position: -2000px 0px;
     -webkit-background-clip: text;
@@ -608,7 +615,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .submit {
-    width: 25%;
     margin: 20px;
 }
 
@@ -667,6 +673,10 @@ label {
         object-fit: contain;
     }
 
+    .submit {
+        margin: 20px;
+    }
+
     .logo {
         margin: 2px;
     }
@@ -708,6 +718,7 @@ label {
 
     #parallax {
         height: 100vw;
+        flex-direction: column;
     }
 
     #cert-imgs {
@@ -770,8 +781,8 @@ label {
     }
 
     #me-pic {
-        width: 75vw;
-        height: 75vw;
+        width: 25vw;
+        height: 25vw;
         object-fit: cover;
     }
 
@@ -834,8 +845,8 @@ label {
 
 
     #me-pic {
-        width: 50vw;
-        height: 50vw;
+        width: 25vw;
+        height: 25vw;
         object-fit: cover;
     }
 }

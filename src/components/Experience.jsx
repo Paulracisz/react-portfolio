@@ -1,7 +1,4 @@
 import vegaTouchApp from '../resources/vegatouchapp.jpg'
-// import vegaTouchAppHvac from '../resources/vegatouchcapphvac.jpg'
-// import trumaAventa from '../resources/trumaAventa.png'
-import Biweeklysprints from './BiweeklySpints'
 import Contributions from './Contributions'
 import '../stylesheets/experience.css'
 import { useEffect } from 'react'
@@ -38,19 +35,20 @@ export default function Experience(){
             }
         })
 
-        gsap.to('.fold-down-3', { 
-            scrollTrigger: { 
-                start: 2800,
-                markers: false
-            },
-            rotateX: "0deg", 
-            transformOrigin: "top",
-            duration: 1, 
-            ease: 'bounce'
-        })
+        // gsap.to('.fold-down-3', { 
+        //     scrollTrigger: { 
+        //         start: 2800,
+        //         markers: false
+        //     },
+        //     rotateX: "0deg", 
+        //     transformOrigin: "top",
+        //     duration: 1, 
+        //     ease: 'bounce'
+        // })
 
         gsap.to(".lynx-photo", { 
             scrollTrigger: { 
+                trigger: ".lynx-photo",
                 start: 1500,
             }, 
             duration: 1,
@@ -60,6 +58,7 @@ export default function Experience(){
 
         gsap.to('.lynx-description', { 
             scrollTrigger: { 
+                trigger: ".lynx-description",
                 start: 1500, 
             },
             duration: 1, 
@@ -85,10 +84,9 @@ export default function Experience(){
                         <img className='lynx-screen' src = {vegaTouchApp} alt = "vegatouch mira app screenshot from firefly integrations"></img>
                     </div> 
                     <div className = "lynx-description">
-                        <p className = "lynx-text">This is the VegaTouch Mira App, It is used to control the systems in RV Motor Homes. Firefly programs these apps for RV manufacturers, who sell them as a premium add-on to a luxury motorhome purchase.</p>
+                        <p className = "lynx-text">This is the VegaTouch Mira App. I build the interface.</p>
                     </div>     
                 </div>
-                <Biweeklysprints />
                 <div className='fold-down-3'> 
                     <h3 className='fold-down-text-smaller'>So what features do I contribute?</h3>
                 </div>

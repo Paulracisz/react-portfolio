@@ -1,7 +1,4 @@
-import * as LottiePlayer from "@lottiefiles/lottie-player";
 import {useEffect, useRef} from 'react'
-import animationData from "../resources/lottieAnimations/104286-coding-screen.json"
-import gsap from 'gsap'
 // import Typing from "react-typing-animation";
 import "../stylesheets/biweekly.css"
 export default function Biweeklysprints(){
@@ -37,9 +34,6 @@ export default function Biweeklysprints(){
 
     return( 
         <div className = "biweek-grid-container">
-            <div className="biweek-text-container"> 
-                <p className = "biweek-text">I contribute to bi-weekly sprints with Javascript, CSS, and HTML</p>    
-            </div>
             <lottie-player
                 className = "lottie-animation" 
                 ref = {animationRef}

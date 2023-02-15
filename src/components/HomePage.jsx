@@ -4,16 +4,13 @@ import GitHubLogo from "../resources/githublogo.png";
 import LinkedInLogo from "../resources/linkedinlogo.png";
 import FaceBookLogo from "../resources/facebooklogo.png";
 import "../stylesheets/resume.css";
-import ResumeFile from "../resources/resumefile.pdf";
+import ResumeFile from "../resources/resume.docx";
 import B4Thumbnail from "../resources/b4thumbnail.png";
 import CFTThumbnail from "../resources/cftthumbnail.png";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from '../resources/axelogoapproved.png';
 import "../stylesheets/work.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from "react-responsive-carousel";
-// import FrontEndCert from "../resources/frontendcert.png";
-// import FullStackCert from "../resources/Fullstackcert.PNG";
 import MePic from "../resources/metalking3.png";
 import CIThumbnail from "../resources/CIThumbnail.png";
 import { init } from "emailjs-com";
@@ -26,8 +23,7 @@ import cowSay from "../resources/cowsayy.jpg";
 import snakeGameThumbnail from "../resources/snakeGameThumbnail.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import Blob from '../resources/blob-haikei.svg';
-import Experience from '../components/Experience'
+import Experience from '../components/Experience';
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
@@ -144,7 +140,7 @@ export default function HomePage() {
          <Experience />
         </div>
         <div id="parallax3">
-          <h2 id="abo2">Projects</h2>
+        <h1 className = "education-text">Projects</h1>
           <div id="work-box">
             <div className="card-container" style={{ width: "15em" }}>
               <div className="card-title card-title-react">
@@ -163,7 +159,7 @@ export default function HomePage() {
                 <img className="card-img" src={CIThumbnail} alt="Card cap" />
               </a>
               <div className="box-card">
-                <h3 className="title">Collect The Infinity Stones</h3>
+                <h2 className="title">Collect The Infinity Stones</h2>
                 <p className="card-text">
                   A React app tracking elapsed time since last visit using
                   cookie storage, react hooks to increment timers, conditional
@@ -324,7 +320,7 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 <img
-                  className="logo"
+                  className="logo linked-in-logo"
                   src={LinkedInLogo}
                   alt="linkedin logo"
                   style={{ width: "2em", height: "2em" }}
@@ -348,9 +344,9 @@ export default function HomePage() {
             <p className="footerp bottom-text">
               This website passes the <img id="axe-logo" alt="the axe logo" src={AxeLogo}></img><a id="axe-link" href="https://www.deque.com/axe/devtools/"
                 target="_blank"
-                rel="noreferrer">Axe Web Accessibility</a> <br/>Test for maximum accessibility and conforms<br/>to best practices.
+                rel="noreferrer">Axe Web Accessibility</a> <br/>test for maximum accessibility and conforms<br/>to best practices.<br/>
+                © 2023 Paul Racisz Licensed under the MIT License
             </p>
-            <p className="footerp bottom-text">Follow me on Social Media!</p>
           </div>
         </div>
       </div>

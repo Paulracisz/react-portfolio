@@ -4,14 +4,16 @@ import '../stylesheets/homepage.css'
 
 export const ContactUs = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_9cnan4m', 'template_cau5y88', form.current, 'user_8H2okSIPMyJBrfkGMvZv4')
       .then((result) => {
+          window.alert("Message Sent Successfully.")
           console.log(result.text);
+
       }, (error) => {
+        window.alert("An error has occured, please try again later." + error.text)
           console.log(error.text);
       });
   };
@@ -20,7 +22,7 @@ export const ContactUs = () => {
     <form ref={form} id="contactformbox"onSubmit={sendEmail}>
       <label className="text">Name
       <br/>
-      <input type="text" name="user_name" />
+      <input type="text" id="usernameinput" name="user_name" />
       </label>
       <label className="email">Email
       <br/>

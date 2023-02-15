@@ -6,6 +6,7 @@
   "dependencies": {
     "@inlet/react-pixi": "^6.8.0",
     "@lottiefiles/lottie-player": "^1.7.1",
+    "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
