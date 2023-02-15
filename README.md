@@ -3,9 +3,9 @@
 Welcome to my portfolio website, built using React! This website is designed to showcase my skills and experience as a developer, and provide a glimpse into some of the projects I've worked on.
 ## Table of Contents
 
-- [Features](#features)
-- [Technologies Used](#Technologies Used)
-- [Getting Started](#Getting Started)
+- [Features](#Features)
+- [Technologies Used](#Technologies)
+- [Getting Started](#Getting)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
 - [License](#License)
