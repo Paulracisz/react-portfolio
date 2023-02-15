@@ -443,6 +443,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     background: url("../resources/youfoundthekitten.png") -20px -20px no-repeat;
     color: transparent;
+    padding-bottom: 5px;
     -webkit-text-stroke: 1px gray;
     background-position: -2000px 0px;
     -webkit-background-clip: text;
