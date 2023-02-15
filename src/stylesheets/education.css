@@ -1,0 +1,48 @@
+#big-container {
+    width: 100vw;
+    background-color: #111013;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ka-logo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0;
+    transform: translateX(4000px);
+}
+
+#img-cover-div {
+    position: absolute;
+    background-color: #111013;
+    width: 4000px;
+    height: 400px;
+}
+
+#img-cover-div-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#ka-text {
+    line-break: break-word;
+    width: 25%;
+    font-size: 2em;
+}
+
+#ka-logo:hover {
+    cursor: pointer;
+}
+
+#ka-pic-and-text-flex {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}

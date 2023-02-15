@@ -9,6 +9,7 @@ import tanks from "../resources/veagtouchtanks.jpg";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Education from "./Education";
 
 export default function Contributions() {
   useEffect(() => { 
@@ -47,6 +48,7 @@ export default function Contributions() {
           ></img>
         </div>
       </div>
+      <Education/>
     </div>
   );
 }
