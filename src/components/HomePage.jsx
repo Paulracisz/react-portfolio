@@ -4,7 +4,7 @@ import GitHubLogo from "../resources/githublogo.png";
 import LinkedInLogo from "../resources/linkedinlogo.png";
 import FaceBookLogo from "../resources/facebooklogo.png";
 import "../stylesheets/resume.css";
-import ResumeFile from "../resources/resumefile.pdf";
+import ResumeFile from "../resources/resume.docx";
 import B4Thumbnail from "../resources/b4thumbnail.png";
 import CFTThumbnail from "../resources/cftthumbnail.png";
 import GitLabLogo from "../resources/gitlab-logo.png";
@@ -28,6 +28,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import Blob from '../resources/blob-haikei.svg';
 import Experience from '../components/Experience'
+import { Carousel } from "bootstrap";
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
@@ -144,7 +145,7 @@ export default function HomePage() {
          <Experience />
         </div>
         <div id="parallax3">
-          <h2 id="abo2">Projects</h2>
+        <h1 className = "education-text">Projects</h1>
           <div id="work-box">
             <div className="card-container" style={{ width: "15em" }}>
               <div className="card-title card-title-react">
@@ -324,7 +325,7 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 <img
-                  className="logo"
+                  className="logo linked-in-logo"
                   src={LinkedInLogo}
                   alt="linkedin logo"
                   style={{ width: "2em", height: "2em" }}
@@ -349,7 +350,7 @@ export default function HomePage() {
               This website passes the <img id="axe-logo" alt="the axe logo" src={AxeLogo}></img><a id="axe-link" href="https://www.deque.com/axe/devtools/"
                 target="_blank"
                 rel="noreferrer">Axe Web Accessibility</a> <br/>Test for maximum accessibility and conforms<br/>to best practices.<br/>
-                Created by Paul Racisz.
+                © 2023 Paul Racisz Licensed under the MIT License
             </p>
           </div>
         </div>

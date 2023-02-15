@@ -38,16 +38,16 @@ export default function Experience(){
             }
         })
 
-        gsap.to('.fold-down-3', { 
-            scrollTrigger: { 
-                start: 2800,
-                markers: false
-            },
-            rotateX: "0deg", 
-            transformOrigin: "top",
-            duration: 1, 
-            ease: 'bounce'
-        })
+        // gsap.to('.fold-down-3', { 
+        //     scrollTrigger: { 
+        //         start: 2800,
+        //         markers: false
+        //     },
+        //     rotateX: "0deg", 
+        //     transformOrigin: "top",
+        //     duration: 1, 
+        //     ease: 'bounce'
+        // })
 
         gsap.to(".lynx-photo", { 
             scrollTrigger: { 
