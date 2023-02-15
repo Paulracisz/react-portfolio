@@ -1,0 +1,24 @@
+.hvac-photo{ 
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+.hvac-p { 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-1000px);
+    opacity: 0;   
+}
+
+.hvac-description {
+    display: flex;
+    align-items: center;
+}
+
+.experience-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

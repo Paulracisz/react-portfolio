@@ -37,9 +37,6 @@ export default function Biweeklysprints(){
 
     return( 
         <div className = "biweek-grid-container">
-            <div className="biweek-text-container"> 
-                <p className = "biweek-text">I contribute to bi-weekly sprints with Javascript, CSS, and HTML</p>    
-            </div>
             <lottie-player
                 className = "lottie-animation" 
                 ref = {animationRef}
