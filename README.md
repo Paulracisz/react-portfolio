@@ -14,10 +14,10 @@ Welcome to my portfolio website, built using React! This website is designed to 
 
 This website features a clean and modern design, with a focus on showcasing my skills and experience. Some of the key features of this website include:
 
-- A home page with an introduction to who I am and what I do
-- A portfolio page with links to some of my past projects
-- A skills page with a breakdown of my technical skills and expertise
-- A contact page with a form to get in touch with me
+- A home section with an introduction to who I am and what I do
+- A projects section with links to some of my past projects
+- A skills section with a breakdown of my technical skills and expertise
+- A contact section with a form to get in touch with me
 
 ## Technologies Used
 
