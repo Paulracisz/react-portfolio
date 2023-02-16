@@ -43,7 +43,7 @@ export default function BugSVG({bottom, left}){
     }, [])
     return( 
         <div> 
-            <svg ref = {bugRef}   className="bug" style = {{bottom: bottom, left: left}}  fill= {hover ? "rgb(250, 167, 158)" : "salmon"} height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+            <svg ref = {bugRef}   className="bug" style = {{bottom: bottom, left: left}}  fill= {hover ? "rgb(250, 167, 158)" : "salmon"} height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 512 512" xmlSpace="preserve" onMouseEnter={() => setHover(prev => !prev)} onMouseLeave = {() => setHover(prev => !prev)}>
             <g>
                 <g>
