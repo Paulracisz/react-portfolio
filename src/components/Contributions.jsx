@@ -33,7 +33,7 @@ export default function Contributions() {
   })
 }, [])
   return (
-    <div className="zoom-in">
+    <div className="">
       <div className="experience-grid">
         <div className="hvac-description">
           <p className="hvac-p">

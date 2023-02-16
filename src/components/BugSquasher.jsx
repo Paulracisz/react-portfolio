@@ -59,17 +59,18 @@ export default function BugSquasher(){
             },
             transform: "scale3d(1,1,1)",
             onComplete: () => { 
-                gsap.to('.bug-container', { 
+                gsap.to('.bug-box', { 
                     position: "sticky",
-                    top: "20px"
+                    // position: '-webkit-sticky',
+                    top: "0"
                 })
             }
         })
         gsap.to("#squash", { 
             scrollTrigger: { 
                 trigger:"#squash",
-                start: 200, 
-                end: 1800,
+                start: "top top", 
+                end: "+=1800",
                 scrub: true
             },
             opacity: 1

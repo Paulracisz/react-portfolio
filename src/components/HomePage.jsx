@@ -58,6 +58,7 @@ export default function HomePage() {
           end: 1250,
           scrub: true,
         },
+        // position: 'relative',
         transform: "translateY(-900px)",
         duration: '2'
       })

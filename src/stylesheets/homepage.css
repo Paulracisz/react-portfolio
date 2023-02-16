@@ -30,7 +30,9 @@
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
+    height: auto;
+    contain: paint;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     background-color: #111013;
     background-position: cover;
@@ -62,7 +64,7 @@ hr {
 }
 
 .divider {
-    height: 175vh
+    height: 100vh
 }
 
 #parallax {
@@ -76,7 +78,7 @@ hr {
     justify-content: center;
     background-repeat: no-repeat;
     height: 100vh;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-attachment: fixed;
     background-position: center;
