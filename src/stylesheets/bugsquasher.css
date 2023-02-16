@@ -4,7 +4,6 @@
 }
 
 .bug-box{ 
-    position: fixed;
     border: 5px solid salmon;
     height: 100vh; 
     width: 100vw;
@@ -18,6 +17,22 @@
     position: absolute
 }
 
-.bug:hover{ 
-    fill: blue
+.bug:hover {
+    cursor: pointer;
+}
+
+#squash {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 4em;
+    opacity: 0;
+
 }

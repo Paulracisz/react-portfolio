@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Education from "./Education";
+import BugSquasher from "./BugSquasher";
 
 export default function Contributions() {
   useEffect(() => { 
@@ -14,7 +15,7 @@ export default function Contributions() {
     gsap.to(".hvac-photo", { 
       scrollTrigger: { 
           trigger: ".hvac-photo",
-          start: "bottom 100%",
+          start: "top 90%",
       }, 
       duration: 1,
       transform: "translateX(0px)",
@@ -47,6 +48,7 @@ export default function Contributions() {
           ></img>
         </div>
       </div>
+      <BugSquasher/>
       <Education/>
     </div>
   );

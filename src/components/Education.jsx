@@ -14,7 +14,7 @@ export default function Education() {
         gsap.to("#img-cover-div", { 
           scrollTrigger: { 
           trigger: "#img-cover-div",
-          start: "bottom 100%",
+          start: "top 100%",
           }, 
           duration: 2,
           transform: "translateX(-4000px)",

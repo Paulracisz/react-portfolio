@@ -3,7 +3,6 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useEffect, useRef } from "react"
 import { useState } from "react"
-import { Stage, Sprite } from "@inlet/react-pixi"
 import useWindowDimensions from "../helpers/hooks/useWindowDimensions"
 // import { bugArray } from "../helpers/bugGenerator.js"
 import Bug from '../resources/svgs/bug-svgrepo-com.svg'
@@ -40,8 +39,6 @@ export default function BugSquasher(){
         return Math.random() * ((max - min) + min)
     }
 
-    console.log(getRandomNumber(height, 0))
-
     function removeBug(bugArray){ 
 
     }
@@ -55,13 +52,27 @@ export default function BugSquasher(){
     useEffect(() => { 
         gsap.to(".bug-box", { 
             scrollTrigger: { 
-                start: 0, 
-                // trigger: ".bug-container",
-                end: 1000, 
-                scrub: true,
-                markers: true
+                start: "top 100%", 
+                trigger: ".bug-container",
+                end: "top 0%", 
+                scrub: true
             },
-            transform: "scale3d(1,1,1)"
+            transform: "scale3d(1,1,1)",
+            onComplete: () => { 
+                gsap.to('.bug-container', { 
+                    position: "sticky",
+                    top: "20px"
+                })
+            }
+        })
+        gsap.to("#squash", { 
+            scrollTrigger: { 
+                trigger:"#squash",
+                start: 200, 
+                end: 1800,
+                scrub: true
+            },
+            opacity: 1
         })
     },[ ])
 
@@ -79,9 +90,8 @@ export default function BugSquasher(){
     //     })
     // }, [bugArray])
     
-    console.log(bugArray)
     function squashBug(e){ 
-        console.log('clicked bug', e.target)
+        
     }
 
     return( 
@@ -95,7 +105,7 @@ export default function BugSquasher(){
                     )
                 })}
                 {/* <BugSVG /> */}
-                    Bug Squash
+                    <div id="squash">I squash bugs.</div>
 
             </div>
         </div>
