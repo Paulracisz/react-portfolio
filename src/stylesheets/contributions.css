@@ -28,5 +28,6 @@
 @media all and (max-width: 699px) {
     .hvac-p {
         margin-left: 0px;
+        padding:15px;
     }
 }

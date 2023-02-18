@@ -10,7 +10,8 @@ export default function Experience(){
         gsap.registerPlugin(ScrollTrigger)
         gsap.to('.fold-down', { 
             scrollTrigger: { 
-                start: 1300, 
+                trigger: ".fold-down",
+                start: "top 100%", 
             },
             transformOrigin: "top",
             rotateX: '0deg', 
@@ -19,15 +20,15 @@ export default function Experience(){
             onComplete: () => { 
                 gsap.to('.underline', { 
                     width: "100%",
-                    duration: .5,
+                    duration: .3,
                     onComplete: () => { 
                         gsap.to('.fold-down-2', { 
                             scrollTrigger: { 
-                                start: 1400, 
+                                start: "top 100%", 
                             },
                             transformOrigin: "top",
                             rotateX: '0deg', 
-                            duration: .5,
+                            duration: .3,
                             ease: "bounce"
                         })
                     }
@@ -49,7 +50,7 @@ export default function Experience(){
         gsap.to(".lynx-photo", { 
             scrollTrigger: { 
                 trigger: ".lynx-photo",
-                start: 1500,
+                start: "top 100%",
             }, 
             duration: 1,
             transform: "translateX(0px)",
@@ -59,7 +60,7 @@ export default function Experience(){
         gsap.to('.lynx-description', { 
             scrollTrigger: { 
                 trigger: ".lynx-description",
-                start: 1500, 
+                start: "top 100%", 
             },
             duration: 1, 
             transform: 'translateX(0)',
