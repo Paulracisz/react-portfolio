@@ -16,6 +16,7 @@ import CIThumbnail from "../resources/CIThumbnail.png";
 import { init } from "emailjs-com";
 import { ContactUs } from "./contact";
 import javaScriptSymbol from "../resources/javascriptlogo.png";
+import reactSymbol from "../resources/reactlogo.png";
 import javaSymbol from "../resources/javasymbol.png";
 import pythonSymbol from "../resources/python.png";
 import cowSay from "../resources/cowsayy.jpg";
