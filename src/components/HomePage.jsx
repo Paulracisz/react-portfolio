@@ -15,7 +15,6 @@ import MePic from "../resources/metalking3.png";
 import CIThumbnail from "../resources/CIThumbnail.png";
 import { init } from "emailjs-com";
 import { ContactUs } from "./contact";
-import reactSymbol from "../resources/reactLogo.png";
 import javaScriptSymbol from "../resources/javascriptlogo.png";
 import javaSymbol from "../resources/javasymbol.png";
 import pythonSymbol from "../resources/python.png";
