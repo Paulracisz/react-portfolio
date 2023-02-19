@@ -17,6 +17,15 @@
     position: absolute
 }
 
+#splatter {
+    height: 50px;
+    width: 50px;
+    color: salmon;
+    animation: none !important;
+    transition: none !important;
+    position: absolute;
+}
+
 .bug:hover {
     cursor: pointer;
 }
