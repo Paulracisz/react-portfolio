@@ -84,20 +84,23 @@ export default function BugSquasher() {
   // }, [bugArray])
 
   function squashBug(e, index) {
-    const bugElement = e.target;
-    const bugPos = bugElement.getBoundingClientRect();
-    const updatedBugArray = [...bugArray];
-    updatedBugArray.splice(
-      index,
-      1,
-      <img
-        id="splatter"
-        src={Splatter}
-        alt="splatter"
-        style={{ top: bugPos.top, left: bugPos.left }}
-      />
-    );
-    setBugArray(updatedBugArray);
+    console.log(e.target);
+    if (e.target.tagName !== "IMG") {
+      const bugElement = e.target;
+      const bugPos = bugElement.getBoundingClientRect();
+      const updatedBugArray = [...bugArray];
+      updatedBugArray.splice(
+        index,
+        1,
+        <img
+          id="splatter"
+          src={Splatter}
+          alt="splatter"
+          style={{ top: bugPos.top, left: bugPos.left }}
+        />
+      );
+      setBugArray(updatedBugArray);
+    }
   }
 
   return (
