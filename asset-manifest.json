@@ -1,42 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f821fde.css",
-    "main.js": "/static/js/main.ce728437.js",
+    "main.css": "/static/css/main.347ea0df.css",
+    "main.js": "/static/js/main.1ea32d8b.js",
     "static/js/496.63294d96.chunk.js": "/static/js/496.63294d96.chunk.js",
     "static/media/cftthumbnail.png": "/static/media/cftthumbnail.803a4b25648d522ac8a8.png",
-    "static/media/tohthumbnail.png": "/static/media/tohthumbnail.5bedde43f3ac33a4cc3c.png",
-    "static/media/pfhthumbnail.png": "/static/media/pfhthumbnail.709169f7753ca69a2243.png",
     "static/media/heyyou.png": "/static/media/heyyou.d98f72c2f24214eba2e7.png",
-    "static/media/mgthumbnail.png": "/static/media/mgthumbnail.9dfd68ba2aff258acd96.png",
     "static/media/b4thumbnail.png": "/static/media/b4thumbnail.6527da22ce1fc39b1027.png",
     "static/media/youfoundthekitten.png": "/static/media/youfoundthekitten.2afda5300d3787230095.png",
     "static/media/CIThumbnail.png": "/static/media/CIThumbnail.b4abc8c25e4351d82142.png",
     "static/media/kaimg.jpg": "/static/media/kaimg.2937a888f4afbcbaa4d4.jpg",
-    "static/media/reactlogo.png": "/static/media/reactlogo.fb59dfc6bb1bac6b0ad0.png",
-    "static/media/javascriptlogo.png": "/static/media/javascriptlogo.92169892ea013a5154bd.png",
-    "static/media/javasymbol.png": "/static/media/javasymbol.b04af2d9c0521e6c6d32.png",
-    "static/media/gocthumbnail.png": "/static/media/gocthumbnail.f34c0df696cade9cd5e0.png",
     "static/media/metalking3.png": "/static/media/metalking3.7d65c9363d3829c19d3a.png",
-    "static/media/resume.png": "/static/media/resume.78e167dea7ce65f3ca21.png",
-    "static/media/python.png": "/static/media/python.c6d788a9bfd3688a3bda.png",
-    "static/media/resumefile.pdf": "/static/media/resumefile.ee6588408cb15b2f69d4.pdf",
     "static/media/vegatouchapp.jpg": "/static/media/vegatouchapp.72490e813ea1a9cb1765.jpg",
     "static/media/vegatouchcapphvac.jpg": "/static/media/vegatouchcapphvac.0480d0929cf175a7f0c9.jpg",
     "static/media/kalogo.png": "/static/media/kalogo.80c9a528dfef544a9050.png",
     "static/media/axelogoapproved.png": "/static/media/axelogoapproved.81f76e4d66bf580d012f.png",
-    "static/media/cowsayy.jpg": "/static/media/cowsayy.bf51a8ab5d83185cdad3.jpg",
     "static/media/linkedinlogo.png": "/static/media/linkedinlogo.d8acea4bb82d33e872d0.png",
     "static/media/gitlab-logo.png": "/static/media/gitlab-logo.154caaf6a91a6c6178b1.png",
     "static/media/resume.docx": "/static/media/resume.64d34b91b031ef102efd.docx",
     "static/media/splatter.svg": "/static/media/splatter.746d80183c6a80b06f6e5ed50897d894.svg",
-    "static/media/bug-svgrepo-com.svg": "/static/media/bug-svgrepo-com.08f406d03e684f15393ededa93de979d.svg",
     "index.html": "/index.html",
-    "main.8f821fde.css.map": "/static/css/main.8f821fde.css.map",
-    "main.ce728437.js.map": "/static/js/main.ce728437.js.map",
+    "main.347ea0df.css.map": "/static/css/main.347ea0df.css.map",
+    "main.1ea32d8b.js.map": "/static/js/main.1ea32d8b.js.map",
     "496.63294d96.chunk.js.map": "/static/js/496.63294d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f821fde.css",
-    "static/js/main.ce728437.js"
+    "static/css/main.347ea0df.css",
+    "static/js/main.1ea32d8b.js"
   ]
 }
