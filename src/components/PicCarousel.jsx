@@ -1,8 +1,13 @@
+// images
 import CIThumbnail from "../resources/CIThumbnail.png";
 import B4Thumbnail from "../resources/b4thumbnail.png";
 import CFTThumbnail from "../resources/cftthumbnail.png";
-import React, { useState } from "react";
+
+// libraries
 import Carousel from "react-bootstrap/Carousel";
+import React, { useState } from "react";
+
+// stylesheets
 import "../stylesheets/carousel.css";
 
 export default function PicCarousel() {

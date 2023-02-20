@@ -1,5 +1,8 @@
+// libraries
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+
+// stylesheets
 import "../stylesheets/homepage.css";
 
 export const ContactUs = () => {

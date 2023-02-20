@@ -1,26 +1,32 @@
-import React, { useEffect } from "react";
-import "../stylesheets/homepage.css";
+// images
 import GitHubLogo from "../resources/githublogo.png";
 import LinkedInLogo from "../resources/linkedinlogo.png";
 import FaceBookLogo from "../resources/facebooklogo.png";
-import "../stylesheets/resume.css";
 import ResumeFile from "../resources/resume.docx";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from "../resources/axelogoapproved.png";
+
+// stylesheets
+import "../stylesheets/homepage.css";
+import "../stylesheets/resume.css";
 import "../stylesheets/work.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import MePic from "../resources/metalking3.png";
+
+// libraries
+import React, { useEffect } from "react";
 import { init } from "emailjs-com";
 import { ContactUs } from "./contact";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// components
 import Experience from "../components/Experience";
 import Caroseul from "./PicCarousel";
+
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 export default function HomePage() {
-  // let isEnabled = true;
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("#me-pic", {
@@ -58,74 +64,15 @@ export default function HomePage() {
     });
   }, []);
 
-  // function toggleTickerEvent(e) {
-  //   e.preventDefault();
-  //   let vars = document.querySelector(":root");
-  //   let nightModeDiv = document.getElementById("night-mode-toggle");
-  //   let body = document.querySelector("body");
-  //   if (!isEnabled) {
-  //     // set to light mode
-  //     nightModeDiv.style.justifyContent = "flex-start";
-  //     vars.style.setProperty("--background-color", "white");
-  //     vars.style.setProperty("--border-color", "white");
-  //     vars.style.setProperty("--desc-text-color", "black");
-  //     vars.style.setProperty("--abo-text", "black");
-  //     vars.style.setProperty("--text-shadow-about", "white");
-  //     vars.style.setProperty("--box-shadow-hover-color", "black");
-  //     vars.style.setProperty("--caro-slide-img-color", "black");
-  //     vars.style.setProperty("--night-mode-toggle-color", "#09aee9");
-  //     vars.style.setProperty("--border-logo", "black");
-  //     vars.style.setProperty("--header-color", "black");
-  //     vars.style.setProperty("--border-bottom-h2-color", "red");
-  //     vars.style.setProperty("--download-border-color", "black");
-  //     vars.style.setProperty("--download-text-color", "black");
-  //     vars.style.setProperty("--dot-color", "black");
-  //     vars.style.setProperty("--label-text-color", "black");
-  //     vars.style.setProperty("--email-p", "black");
-  //     body.style.setProperty("filter", "brightness(100%)");
-  //   } else if (isEnabled) {
-  //     // set to night mode
-  //     nightModeDiv.style.justifyContent = "flex-end";
-  //     vars.style.setProperty("--background-color", "#1f232a");
-  //     vars.style.setProperty("--border-color", "#1f232a");
-  //     vars.style.setProperty("--desc-text-color", "white");
-  //     vars.style.setProperty("--abo-text", "white");
-  //     vars.style.setProperty("--text-shadow-about", "black");
-  //     vars.style.setProperty("--box-shadow-hover-color", "white");
-  //     vars.style.setProperty("--caro-slide-img-color", "white");
-  //     vars.style.setProperty("--night-mode-toggle-color", "#0900ff");
-  //     vars.style.setProperty("--border-logo", "white");
-  //     vars.style.setProperty("--header-color", "white");
-  //     vars.style.setProperty("--border-bottom-h2-color", "#09aee9");
-  //     vars.style.setProperty("--download-border-color", "white");
-  //     vars.style.setProperty("--download-text-color", "white");
-  //     vars.style.setProperty("--dot-color", "white");
-  //     vars.style.setProperty("--label-text-color", "white");
-  //     vars.style.setProperty("--email-p", "white");
-  //     body.style.setProperty("filter", "brightness(75%)");
-  //   }
-  //   isEnabled = !isEnabled;
-  // }
-
   return (
     <>
       <div id="big">
         <div id="parallax">
-          {/* <div id="night-mode-text-flex">
-            <div id="night-mode-toggle-flex">
-              <div id="night-mode-toggle">
-                {" "}
-                <div id="toggle-ticker" onClick={toggleTickerEvent}></div>
-              </div>
-              <p id="paul-desc">Try Night Mode!</p>
-            </div>
-          </div> */}
           <h3 id="Iam">
             Paul is a complex problem-solver with an analytical driven mindset.
             He is dedicated to crafting better technology for tomorrow, through
             creative innovation, leading to breathtaking results.
           </h3>
-          {/* <div id="scroller-div"></div> */}
           <div id="pic-flex">
             <img id="me-pic" src={MePic} alt="Card cap" />
           </div>

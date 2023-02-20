@@ -1,6 +1,11 @@
-import React, { useEffect } from "react";
+// images
 import Ralof from "../resources/heyyou.png";
+
+// stylesheets
 import "../stylesheets/404.css";
+
+// libraries
+import React, { useEffect } from "react";
 import gsap from "gsap";
 
 export default function FourZeroFour() {
@@ -9,7 +14,7 @@ export default function FourZeroFour() {
       gsap.to("#fade-box", {
         duration: 15,
         opacity: 0,
-        ease: "SlowMo"
+        ease: "SlowMo",
       });
       gsap.to("#ralof", {
         opacity: 1,

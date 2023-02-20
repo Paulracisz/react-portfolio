@@ -1,11 +1,14 @@
+// stylesheets
 import "../stylesheets/bugsquasher.css";
+
+// libraries
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 import useWindowDimensions from "../helpers/hooks/useWindowDimensions";
-// import { bugArray } from "../helpers/bugGenerator.js"
-import Bug from "../resources/svgs/bug-svgrepo-com.svg";
+
+// resources
 import Splatter from "../resources/svgs/splatter.svg";
 import BugSVG from "../helpers/BugSVG";
 
