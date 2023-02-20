@@ -72,18 +72,6 @@ export default function BugSquasher() {
     });
   }, []);
 
-  //     gsap.fromTo(".bug", {
-  //         y: 100,
-  //         // left: getRandomNumber(width, 100)
-  //     }, {
-  //         y: -height - 100,
-  //         repeat: -1,
-  //         repeatRefresh: true,
-  //         duration: Math.random() + 1 * 6,
-  //         delay: 'random(0,4)'
-  //     })
-  // }, [bugArray])
-
   function squashBug(e, index) {
     console.log(e.target);
     if (e.target.tagName !== "IMG") {
