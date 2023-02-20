@@ -38,8 +38,6 @@ export default function BugSquasher() {
     return Math.random() * (max - min + min);
   }
 
-  function removeBug(bugArray) {}
-
   useEffect(() => {
     for (let i = 0; i <= 20; i++) {
       generateBugs();
