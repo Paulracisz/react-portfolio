@@ -33,7 +33,7 @@ export default function HomePage() {
       scrollTrigger: {
         trigger: "#parallax",
         start: 0,
-        end: 400,
+        end: 200,
         scrub: true,
       },
       transform: "translateY(0%)",
@@ -43,7 +43,7 @@ export default function HomePage() {
       scrollTrigger: {
         trigger: "#parallax",
         start: 0,
-        end: 800,
+        end: 400,
         scrub: true,
       },
       backgroundPosition: "0px 0px",
@@ -53,7 +53,7 @@ export default function HomePage() {
           scrollTrigger: {
             trigger: "#parallax",
             start: 800,
-            end: 1250,
+            end: 1000,
             scrub: true,
           },
           // position: 'relative',

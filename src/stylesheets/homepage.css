@@ -80,8 +80,8 @@ hr {
     height: 100vh;
     position: sticky;
     top: 0;
-    background-attachment: fixed;
     background-position: center;
+    -webkit-overflow-scrolling: touch;
     border-bottom: 10px var(--border-color);
 }
 
@@ -111,7 +111,6 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    background-attachment: fixed;
     background-position: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
@@ -611,7 +610,6 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    background-attachment: fixed;
     background-position: center;
     width: 100%;
 }
@@ -656,6 +654,14 @@ label {
 #linksbox>a:hover {
     box-shadow: var(--box-shadow-hover-color) 2px 2px;
     transition: 0.5 ease all;
+}
+
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) and (pointer:coarse) {
+
+    /* CSS rules specific to Brave browser on iOS */
+    #parallax {
+        position: fixed;
+    }
 }
 
 
@@ -719,7 +725,7 @@ label {
     }
 
     #parallax {
-        height: 100vw;
+        height: 100vh;
         flex-direction: column;
     }
 
@@ -837,7 +843,7 @@ label {
 /* Ipads */
 @media all and (max-width: 1000px) {
     #Iam {
-        font-size: 16px;
+        font-size: 25px;
         width: 80%;
     }
 

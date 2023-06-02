@@ -55,7 +55,7 @@ export default function PicCarousel() {
         </Carousel.Item>
         <Carousel.Item>
           <a
-            href="https://paulracisz.github.io/Collecting-The-Infinity-Stones/"
+            href="https://paulracisz.gitlab.io/connect-four/"
             target="_blank"
             rel="noreferrer"
           >

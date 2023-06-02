@@ -49,7 +49,7 @@ export default function Education() {
           <p id="ka-text">
             Kenzie Academy is a Software Engineering (12 months), program that
             provided me with relevant skills training, the flexibility for
-            self-paced learning, and a community of support that helped my find
+            self-paced learning, and a community of support that helped me find
             the job I love.{" "}
           </p>
           <div id="img-cover-div-flex">

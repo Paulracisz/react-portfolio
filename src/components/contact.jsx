@@ -1,25 +1,28 @@
-// libraries
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-
-// stylesheets
 import "../stylesheets/homepage.css";
 
 export const ContactUs = () => {
   const form = useRef();
-  const formUserName = document.getElementById("usernameinput");
-  const formEmail = document.getElementById("emailinput");
-  const formText = document.getElementById("textinput");
+
   const sendEmail = (e) => {
     e.preventDefault();
-    formUserName.value = "";
-    formEmail.value = "";
-    formText.value = "";
+
+    let formUserName = document.getElementById("usernameinput").value;
+    let formEmail = document.getElementById("emailinput").value;
+    let formText = document.getElementById("textinput").value;
+
+    const templateParams = {
+      from_name: formUserName,
+      from_email: formEmail,
+      message: formText,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         "service_9cnan4m",
         "template_cau5y88",
-        form.current,
+        templateParams,
         "user_8H2okSIPMyJBrfkGMvZv4"
       )
       .then(
@@ -29,11 +32,13 @@ export const ContactUs = () => {
         },
         (error) => {
           window.alert(
-            "An error has occured, please try again later." + error.text
+            "An error has occurred, please try again later. " + error.text
           );
           console.log(error.text);
         }
       );
+
+    form.current.reset();
   };
 
   return (
@@ -41,12 +46,12 @@ export const ContactUs = () => {
       <label className="text">
         Name
         <br />
-        <input type="text" id="usernameinput" name="user_name" />
+        <input type="text" id="usernameinput" name="from_name" />
       </label>
       <label className="email">
         Email
         <br />
-        <input type="email" id="emailinput" name="user_email" />
+        <input type="email" id="emailinput" name="from_email" />
       </label>
       <label className="message">
         Message
