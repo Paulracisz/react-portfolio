@@ -656,6 +656,50 @@ label {
     transition: 0.5 ease all;
 }
 
+#readme-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #21262D;
+    background-color: #0D1117;
+    margin-bottom: 55px;
+}
+
+#readme-contents {
+    padding: 15px;
+}
+
+#readme-contents>h2,
+#readme-contents>h1 {
+    border-bottom: 1px solid #21262D;
+}
+
+#readme-top-box>p {
+    display: inline;
+}
+
+#readme-logo {
+    width: 2em;
+    display: inline;
+    height: 2em;
+}
+
+#readme-top-box {
+    border: 1px solid #21262D;
+    border-left: none;
+    padding: 15px;
+    border-right: none;
+    border-top: none;
+    width: 100%;
+}
+
+li {
+    color: whitesmoke;
+}
+
 @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) and (pointer:coarse) {
 
     /* CSS rules specific to Brave browser on iOS */
@@ -792,6 +836,10 @@ label {
         width: 25vw;
         height: 25vw;
         object-fit: cover;
+    }
+
+    #readme-box {
+        width: 75%;
     }
 
     #profile-box {

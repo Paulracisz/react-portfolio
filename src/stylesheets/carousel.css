@@ -7,6 +7,22 @@ img {
     object-fit: cover;
 }
 
+
+.caro-img {
+    width: 48%;
+    object-fit: contain;
+
+}
+
+.caro-box {
+    margin-bottom: 55px;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
 .caro-text {
     background-color: rgb(41, 41, 41);
     color: whitesmoke;

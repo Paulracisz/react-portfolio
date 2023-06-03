@@ -5,6 +5,7 @@ import FaceBookLogo from "../resources/facebooklogo.png";
 import ResumeFile from "../resources/resume.docx";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from "../resources/axelogoapproved.png";
+import ReadmeLogo from "../resources/github-icon.PNG";
 
 // stylesheets
 import "../stylesheets/homepage.css";
@@ -22,7 +23,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // components
 import Experience from "../components/Experience";
-import Caroseul from "./PicCarousel";
+import ReadmeViewer from "./ReadmeViewer";
 
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
@@ -83,7 +84,17 @@ export default function HomePage() {
         </div>
         <div id="parallax3">
           <h1 className="education-text">Projects</h1>
-          <Caroseul />
+          <div id="readme-box">
+            <div id="readme-top-box">
+              <img
+                id="readme-logo"
+                alt="a small hamburger style icon of the github readme menu option"
+                src={ReadmeLogo}
+              ></img>
+              <p>Readme.MD</p>
+            </div>
+            <ReadmeViewer username="Paulracisz" repository="Fishing-Game" />
+          </div>
         </div>
         <div id="contact-box">
           <h2 id="header2">Contact Me</h2>
