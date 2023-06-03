@@ -91,7 +91,15 @@ export default function HomePage() {
                 alt="a small hamburger style icon of the github readme menu option"
                 src={ReadmeLogo}
               ></img>
-              <p>Readme.MD</p>
+              <p>
+                <a
+                  href="https://github.com/Paulracisz/Fishing-Game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Readme.MD
+                </a>
+              </p>
             </div>
             <ReadmeViewer username="Paulracisz" repository="Fishing-Game" />
           </div>

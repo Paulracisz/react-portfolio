@@ -682,6 +682,16 @@ label {
     display: inline;
 }
 
+#readme-top-box>p>a {
+    color: white;
+    text-decoration: none;
+}
+
+#readme-top-box>p>a:hover {
+    color: #0044cc;
+    text-decoration: underline;
+}
+
 #readme-logo {
     width: 2em;
     display: inline;
