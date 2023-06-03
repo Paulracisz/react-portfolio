@@ -675,6 +675,7 @@ label {
 #readme-contents>h2,
 #readme-contents>h1 {
     border-bottom: 1px solid #21262D;
+    padding-bottom: 15px;
 }
 
 #readme-top-box>p {

@@ -41,7 +41,9 @@ export default function Contributions() {
     <div className="">
       <div className="experience-grid">
         <div className="hvac-description">
-          <p className="hvac-p">I implement new heating and cooling systems.</p>
+          <p className="hvac-p">
+            I implement controls for new heating and cooling systems.
+          </p>
         </div>
         <div className="hvac-photo">
           <img

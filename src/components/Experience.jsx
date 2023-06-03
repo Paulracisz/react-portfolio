@@ -85,7 +85,8 @@ export default function Experience() {
           </div>
           <div className="lynx-description">
             <p className="lynx-text">
-              This is the VegaTouch Mira App. I help build the interface.
+              This is the VegaTouch Mira App. I help build the interface. The
+              apps are used to control systems in Luxury Motorhomes.
             </p>
           </div>
         </div>
