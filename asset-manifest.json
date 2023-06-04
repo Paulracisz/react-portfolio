@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b18e4cf.css",
-    "main.js": "/static/js/main.31c8d877.js",
+    "main.css": "/static/css/main.1881d48e.css",
+    "main.js": "/static/js/main.27bcc9aa.js",
     "static/js/496.63294d96.chunk.js": "/static/js/496.63294d96.chunk.js",
     "static/media/heyyou.png": "/static/media/heyyou.d98f72c2f24214eba2e7.png",
     "static/media/youfoundthekitten.png": "/static/media/youfoundthekitten.2afda5300d3787230095.png",
@@ -17,12 +17,12 @@
     "static/media/splatter.svg": "/static/media/splatter.746d80183c6a80b06f6e5ed50897d894.svg",
     "index.html": "/index.html",
     "static/media/github-icon.PNG": "/static/media/github-icon.d84830b186819eb6ae49.PNG",
-    "main.8b18e4cf.css.map": "/static/css/main.8b18e4cf.css.map",
-    "main.31c8d877.js.map": "/static/js/main.31c8d877.js.map",
+    "main.1881d48e.css.map": "/static/css/main.1881d48e.css.map",
+    "main.27bcc9aa.js.map": "/static/js/main.27bcc9aa.js.map",
     "496.63294d96.chunk.js.map": "/static/js/496.63294d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b18e4cf.css",
-    "static/js/main.31c8d877.js"
+    "static/css/main.1881d48e.css",
+    "static/js/main.27bcc9aa.js"
   ]
 }
