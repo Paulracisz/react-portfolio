@@ -37,7 +37,19 @@ export default function Experience() {
               rotateX: "0deg",
               duration: 0.3,
               ease: "bounce",
+              onComplete: () => {
+                gsap.to('.fold-down-3', {
+                  scrollTrigger: {
+                    start: "top 50%",
+                  },
+                  transformOrigin: "top",
+                  rotateX: "0deg",
+                  duration: 0.3,
+                  ease: "bounce",
+                });
+              }
             });
+            
           },
         });
       },
@@ -90,12 +102,9 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="fold-down-3">
-          <h3 className="fold-down-text-smaller">
-            So what features do I contribute?
-          </h3>
         </div>
         <Contributions />
+        <div className="fold-down-3">
       </div>
     </div>
   );

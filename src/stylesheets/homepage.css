@@ -678,6 +678,13 @@ label {
     padding-bottom: 15px;
 }
 
+#readme-contents>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #readme-top-box>p {
     display: inline;
 }

@@ -53,6 +53,22 @@ export default function Contributions() {
           ></img>
         </div>
       </div>
+      <div className="features-flexbox">
+      <h3 className="fold-down-text-smaller">
+            So what features did I contribute?
+          </h3>
+          <h3>Internal Tool - App Diag Can Trace</h3>
+          <p id="feature-info-text">I added a diagnostics page that allows technicians to diagnose specific hardware related issues in a unit while assisting end users.</p>
+          <p>[Insert Image of app change here]</p>
+          <br/>
+          <h3>Feature - Adding Faults To Exterior Pages</h3>
+          <p id="feature-info-text">I added a safety feature for some units to show slide and awning faults on the exterior page to warn end-users of a mechnical failure.</p>
+          <p>[Insert Image of app change here]</p>
+          <h3>BugFix - MessageCenter Additional Messages</h3>
+          <p id="feature-info-text">I fixed a previously non-functional feature in VegaTouch Eclipse that now allows custom fault messages to appear in the message center. This feature is used for warning users of hardware failures, and parts that need to be replaced.</p>
+          <p>[Insert Image of app change here]</p>
+          
+          </div>
       <BugSquasher />
       <Education />
     </div>

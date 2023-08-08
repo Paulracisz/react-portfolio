@@ -17,11 +17,26 @@
     align-items: center;
 }
 
+.features-flexbox {
+    margin-top: 8em;    
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
 .experience-flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#feature-info-text {
+    font-size: 24px;
+    width: 50%;
 }
 
 /* Most Mobile */

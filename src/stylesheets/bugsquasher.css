@@ -21,6 +21,8 @@
     height: 50px;
     width: 50px;
     color: salmon;
+    -webkit-user-select: none;
+    user-select: none;
     animation: none !important;
     transition: none !important;
     position: absolute;
@@ -35,6 +37,8 @@
     color: white;
     display: flex;
     align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
     z-index: -1;
     position: relative;
     height: 100%;
