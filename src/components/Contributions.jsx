@@ -4,6 +4,8 @@ import "../stylesheets/experience.css";
 
 // images
 import vegaTouchAppHvac from "../resources/vegatouchcapphvac.jpg";
+import canTrace from '../resources/cantrace.png'
+import messageCenter from '../resources/messageCenter.png'
 
 // components
 import BugSquasher from "./BugSquasher";
@@ -59,14 +61,14 @@ export default function Contributions() {
           </h3>
           <h3>Internal Tool - App Diag Can Trace</h3>
           <p id="feature-info-text">I added a diagnostics page that allows technicians to diagnose specific hardware related issues in a unit while assisting end users.</p>
-          <p>[Insert Image of app change here]</p>
+          <img class="feature-img" src={canTrace} alt="screenshot of vegatouch mira app" />
           <br/>
           <h3>Feature - Adding Faults To Exterior Pages</h3>
           <p id="feature-info-text">I added a safety feature for some units to show slide and awning faults on the exterior page to warn end-users of a mechnical failure.</p>
           <p>[Insert Image of app change here]</p>
           <h3>BugFix - MessageCenter Additional Messages</h3>
           <p id="feature-info-text">I fixed a previously non-functional feature in VegaTouch Eclipse that now allows custom fault messages to appear in the message center. This feature is used for warning users of hardware failures, and parts that need to be replaced.</p>
-          <p>[Insert Image of app change here]</p>
+          <img class="feature-img" src={messageCenter} alt="screenshot of vegatouch mira app" />
           
           </div>
       <BugSquasher />

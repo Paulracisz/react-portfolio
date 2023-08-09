@@ -5,14 +5,13 @@ import FaceBookLogo from "../resources/facebooklogo.png";
 import ResumeFile from "../resources/resume.docx";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from "../resources/axelogoapproved.png";
-import ReadmeLogo from "../resources/github-icon.PNG";
+import MePic from "../resources/metalking3.png";
 
 // stylesheets
 import "../stylesheets/homepage.css";
 import "../stylesheets/resume.css";
 import "../stylesheets/work.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import MePic from "../resources/metalking3.png";
 
 // libraries
 import React, { useEffect } from "react";
@@ -23,7 +22,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // components
 import Experience from "../components/Experience";
-import ReadmeViewer from "./ReadmeViewer";
+import Slide from "./Slide";
 
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
@@ -101,25 +100,7 @@ export default function HomePage() {
         </div>
         <div id="parallax3">
           <h1 className="education-text">Projects</h1>
-          <div id="readme-box">
-            <div id="readme-top-box">
-              <img
-                id="readme-logo"
-                alt="a small hamburger style icon of the github readme menu option"
-                src={ReadmeLogo}
-              ></img>
-              <p>
-                <a
-                  href="https://github.com/Paulracisz/Fishing-Game"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Readme.MD
-                </a>
-              </p>
-            </div>
-            <ReadmeViewer username="Paulracisz" repository="Fishing-Game" />
-          </div>
+          <Slide/>
         </div>
         <div id="contact-box">
           <h2 id="header2">Contact Me</h2>
