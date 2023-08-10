@@ -12,6 +12,38 @@
     opacity: 0;   
 }
 
+
+
+.fly-left {
+    transform: translateX(-2000px);
+}
+
+.fly-left-2 {
+    transform: translateX(-2000px);
+}
+
+.fly-right {
+    transform: translateX(2000px);
+}
+
+.fold-down-contr {
+    font-size: 3em;
+}
+
+.fold-down-contr,
+.fold-down-contr-2,
+.fold-down-contr-3,
+.fold-down-contr-4,
+.fold-down-contr-5,
+.fold-down-contr-6,
+.fold-down-contr-7{
+    transform: rotateX(-90deg);
+    color: white;
+    width: auto;
+    border-radius: 10px;
+    perspective: 1200px;
+}
+
 .hvac-description {
     display: flex;
     align-items: center;
