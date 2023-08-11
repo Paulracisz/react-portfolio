@@ -6,11 +6,13 @@ import ResumeFile from "../resources/resume.docx";
 import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from "../resources/axelogoapproved.png";
 import MePic from "../resources/metalking3.png";
+import ReadMeIcon from "../resources/github-icon.PNG";
 
 // stylesheets
 import "../stylesheets/homepage.css";
 import "../stylesheets/resume.css";
 import "../stylesheets/work.css";
+import "../stylesheets/Carousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 // libraries
@@ -22,7 +24,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // components
 import Experience from "../components/Experience";
-import Slide from "./Slide";
+import ReadmeViewer from "../components/ReadmeViewer";
+import Fullpage from "../components/Fullpage";
 
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
@@ -41,6 +44,7 @@ ADD HOVER ANIMATION FOR SEND BUTTON ON CONTACT FORM []
 ADD WHAT USERS ARE SAYING ABOUT OUR APP SECTION []
 ADD VOLUNTEER WORK SECTION []
 ADD OPEN SOURCE CONTRIBUTIONS SECTION []
+ADD ONE MORE THING IN SO WHAT DO I DO THERE SECTION []
 */
 
 export default function HomePage() {
@@ -86,9 +90,9 @@ export default function HomePage() {
       <div id="big">
         <div id="parallax">
           <h3 id="Iam">
-            Paul is a complex problem-solver with an analytical driven mindset.
-            He is dedicated to crafting better technology for tomorrow, through
-            creative innovation, leading to breathtaking results.
+            "Paul solves complex problems with a driven analytical mindset. He
+            applies his dedication and creative innovation to continuously craft
+            future focused results."
           </h3>
           <div id="pic-flex">
             <img id="me-pic" src={MePic} alt="Card cap" />
@@ -100,7 +104,7 @@ export default function HomePage() {
         </div>
         <div id="parallax3">
           <h1 className="education-text">Projects</h1>
-          <Slide/>
+          <Fullpage />
         </div>
         <div id="contact-box">
           <h2 id="header2">Contact Me</h2>

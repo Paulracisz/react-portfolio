@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.40",
     "@lottiefiles/lottie-player": "^1.7.1",
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",
@@ -27,7 +28,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^9.3.2",
+    "swiper": "^9.4.1",
     "web-vitals": "^3.1.1"
   },
   "scripts": {

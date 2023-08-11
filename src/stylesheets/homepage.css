@@ -618,6 +618,8 @@ body::-webkit-scrollbar-thumb {
     margin: 20px;
 }
 
+
+
 textarea,
 input {
     border: 1px solid var(--input-border);
