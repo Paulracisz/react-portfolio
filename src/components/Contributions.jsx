@@ -6,6 +6,7 @@ import "../stylesheets/experience.css";
 import vegaTouchAppHvac from "../resources/vegatouchcapphvac.jpg";
 import canTrace from '../resources/cantrace.png'
 import messageCenter from '../resources/messageCenter.png'
+import vegaTouchApp from "../resources/Peerreview.PNG";
 
 // components
 import BugSquasher from "./BugSquasher";
@@ -38,7 +39,7 @@ export default function Contributions() {
       transform: "translateX(0px)",
       opacity: 1,
     });
-    
+
     gsap.to(".fly-left", {
       scrollTrigger: {
         trigger: ".fly-left",
@@ -48,7 +49,7 @@ export default function Contributions() {
       transform: "translateX(0px)",
       opacity: 1,
     });
-    
+
     gsap.to(".fly-left-2", {
       scrollTrigger: {
         trigger: ".fly-left-2",
@@ -58,7 +59,7 @@ export default function Contributions() {
       transform: "translateX(0px)",
       opacity: 1,
     });
-    
+
     gsap.to(".fly-right", {
       scrollTrigger: {
         trigger: ".fly-right",
@@ -68,8 +69,8 @@ export default function Contributions() {
       transform: "translateX(0px)",
       opacity: 1,
     });
-  
-    gsap.to('.fold-down-contr', {
+
+    gsap.to(".fold-down-contr", {
       scrollTrigger: {
         trigger: ".fold-down-contr",
         start: "top 100%",
@@ -79,7 +80,7 @@ export default function Contributions() {
       duration: 0.3,
       ease: "bounce",
       onComplete: () => {
-        gsap.to('.fold-down-contr-2', {
+        gsap.to(".fold-down-contr-2", {
           scrollTrigger: {
             trigger: ".fold-down-contr-2",
             start: "top 100%",
@@ -89,7 +90,7 @@ export default function Contributions() {
           duration: 0.3,
           ease: "bounce",
           onComplete: () => {
-            gsap.to('.fold-down-contr-3', {
+            gsap.to(".fold-down-contr-3", {
               scrollTrigger: {
                 trigger: ".fold-down-contr-3",
                 start: "top 100%",
@@ -99,7 +100,7 @@ export default function Contributions() {
               duration: 0.3,
               ease: "bounce",
               onComplete: () => {
-                gsap.to('.fold-down-contr-4', {
+                gsap.to(".fold-down-contr-4", {
                   scrollTrigger: {
                     trigger: ".fold-down-contr-4",
                     start: "top 100%",
@@ -109,7 +110,7 @@ export default function Contributions() {
                   duration: 0.3,
                   ease: "bounce",
                   onComplete: () => {
-                    gsap.to('.fold-down-contr-5', {
+                    gsap.to(".fold-down-contr-5", {
                       scrollTrigger: {
                         trigger: ".fold-down-contr-5",
                         start: "top 100%",
@@ -119,7 +120,7 @@ export default function Contributions() {
                       duration: 0.3,
                       ease: "bounce",
                       onComplete: () => {
-                        gsap.to('.fold-down-contr-6', {
+                        gsap.to(".fold-down-contr-6", {
                           scrollTrigger: {
                             trigger: ".fold-down-contr-6",
                             start: "top 100%",
@@ -129,7 +130,7 @@ export default function Contributions() {
                           duration: 0.3,
                           ease: "bounce",
                           onComplete: () => {
-                            gsap.to('.fold-down-contr-7', {
+                            gsap.to(".fold-down-contr-7", {
                               scrollTrigger: {
                                 trigger: ".fold-down-contr-7",
                                 start: "top 100%",
@@ -151,7 +152,6 @@ export default function Contributions() {
         });
       },
     });
-    
   }, []);
   return (
     <div className="">
@@ -161,12 +161,27 @@ export default function Contributions() {
             I implement controls for new heating and cooling systems.
           </p>
         </div>
+
         <div className="hvac-photo">
           <img
             className="hvac-photo"
             src={vegaTouchAppHvac}
             alt="vegatouch mira app screenshot of the HVAC page from firefly integrations"
           ></img>
+        </div>
+
+        <div className="lynx-photo">
+          <img
+            className="pr-photo"
+            src={vegaTouchApp}
+            alt="vegatouch mira app screenshot from firefly integrations"
+          ></img>
+        </div>
+        <div className="lynx-description">
+          <p className="lynx-text">
+            I conduct Peer Reviews, finding issues in code, functionality of the
+            app, and improving the user experience.
+          </p>
         </div>
       </div>
       <div className="features-flexbox">

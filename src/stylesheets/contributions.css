@@ -12,6 +12,18 @@
     opacity: 0;   
 }
 
+.pr-photo {
+    width: 20em;
+    object-fit: contain;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+    margin: 25px;
+    font-size: 35px;
+}
 
 
 .fly-left {

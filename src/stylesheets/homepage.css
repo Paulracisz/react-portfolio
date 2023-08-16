@@ -607,6 +607,10 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(2000px);
 }
 
+.slide-2, .slide-3 {
+    height: 0px;
+}
+
 .slide-3 {
     transform: translateX(-2000px);
 }
