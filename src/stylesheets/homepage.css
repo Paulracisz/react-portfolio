@@ -587,6 +587,44 @@ body::-webkit-scrollbar-thumb {
     width: 25px;
 }
 
+#radio-container {
+    display: flex;
+}
+
+#radio-buttons {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.slide-1 {
+    transform: translateX(0px);
+}
+
+.slide-2 {
+    transform: translateX(2000px);
+}
+
+.slide-3 {
+    transform: translateX(-2000px);
+}
+
+.slide-1,.slide-2,.slide-3 {
+    transition: all 0.5s ease;
+}
+
+.radio-1 {
+    filter: brightness(50%);
+}
+
+
+#radio-buttons:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
 .logo:hover {
     cursor: pointer;
 }
@@ -667,7 +705,14 @@ label {
     border-radius: 5px;
     border: 1px solid #21262D;
     background-color: #0D1117;
+}
+
+.slides-container {
     margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #readme-contents {

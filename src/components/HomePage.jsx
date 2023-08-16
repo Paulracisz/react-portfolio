@@ -48,6 +48,54 @@ ADD ONE MORE THING IN SO WHAT DO I DO THERE SECTION []
 */
 
 export default function HomePage() {
+  function moveToSlide(index) {
+    let currentSlide = document.getElementsByClassName(`slide-${index}`)[0];
+    let firstSlide = document.getElementsByClassName("slide-1")[0];
+    let secondSlide = document.getElementsByClassName("slide-2")[0];
+    let thirdSlide = document.getElementsByClassName("slide-3")[0];
+    let firstRadioButton = document.getElementsByClassName("radio-1")[0];
+    let secondRadioButton = document.getElementsByClassName("radio-2")[0];
+    let thirdRadioButton = document.getElementsByClassName("radio-3")[0];
+    currentSlide.style.transform = "translateX(0px)";
+    currentSlide.style.height = "100%";
+    switch (index) {
+      case 1:
+        secondSlide.style.transform = "translateX(-2000px)";
+        thirdSlide.style.transform = "translateX(-2000px)";
+
+        firstRadioButton.style.filter = "brightness(50%)";
+        secondRadioButton.style.filter = "none";
+        thirdRadioButton.style.filter = "none";
+
+        secondSlide.style.height = "0px";
+        thirdSlide.style.height = "0px";
+
+        break;
+      case 2:
+        firstSlide.style.transform = "translateX(-2000px)";
+        thirdSlide.style.transform = "translateX(-2000px)";
+
+        firstSlide.style.height = "0px";
+        thirdSlide.style.height = "0px";
+
+        secondRadioButton.style.filter = "brightness(50%)";
+        firstRadioButton.style.filter = "none";
+        thirdRadioButton.style.filter = "none";
+        break;
+      case 3:
+        firstSlide.style.transform = "translateX(-2000px)";
+        secondSlide.style.transform = "translateX(-2000px)";
+
+        firstSlide.style.height = "0px";
+        secondSlide.style.height = "0px";
+
+        thirdRadioButton.style.filter = "brightness(50%)";
+        firstRadioButton.style.filter = "none";
+        secondRadioButton.style.filter = "none";
+        break;
+    }
+  }
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("#me-pic", {
@@ -104,7 +152,97 @@ export default function HomePage() {
         </div>
         <div id="parallax3">
           <h1 className="education-text">Projects</h1>
-          <Fullpage />
+          <div className="slides-container">
+            <div id="radio-container">
+              <div
+                id="radio-buttons"
+                className="radio-1"
+                onClick={() => moveToSlide(1)}
+              ></div>
+              <div
+                id="radio-buttons"
+                className="radio-2"
+                onClick={() => moveToSlide(2)}
+              ></div>
+              <div
+                id="radio-buttons"
+                className="radio-3"
+                onClick={() => moveToSlide(3)}
+              ></div>
+            </div>
+            <div id="readme-box" className="slide-1">
+              <div id="readme-top-box">
+                <img
+                  id="readme-logo"
+                  alt="a small hamburger style icon of the github readme menu option"
+                  src={ReadMeIcon}
+                />
+                <p>
+                  <a
+                    href="https://github.com/Paulracisz/Core-Christian-Living-Blog"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Readme.MD
+                  </a>
+                </p>
+              </div>
+              <div id="readme-contents">
+                <ReadmeViewer
+                  username={"paulRacisz"}
+                  repository={"Core-Christian-Living-Blog"}
+                />
+              </div>
+            </div>
+            <div id="readme-box" className="slide-2">
+              <div id="readme-top-box">
+                <img
+                  id="readme-logo"
+                  alt="a small hamburger style icon of the github readme menu option"
+                  src={ReadMeIcon}
+                />
+                <p>
+                  <a
+                    href="https://github.com/Paulracisz/Fishing-Game"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Readme.MD
+                  </a>
+                </p>
+              </div>
+              <div id="readme-contents">
+                <ReadmeViewer
+                  username={"paulRacisz"}
+                  repository={"Fishing-Game"}
+                />
+              </div>
+            </div>
+            <div id="readme-box" className="slide-3">
+              <div id="readme-top-box">
+                <img
+                  id="readme-logo"
+                  alt="a small hamburger style icon of the github readme menu option"
+                  src={ReadMeIcon}
+                />
+                <p>
+                  <a
+                    href="https://github.com/Paulracisz/sales-table/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Readme.MD
+                  </a>
+                </p>
+              </div>
+              <div id="readme-contents">
+                <ReadmeViewer
+                  username={"paulRacisz"}
+                  repository={"sales-table"}
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div id="contact-box">
           <h2 id="header2">Contact Me</h2>
