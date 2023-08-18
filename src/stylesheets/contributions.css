@@ -38,6 +38,14 @@
     transform: translateX(2000px);
 }
 
+.pr-photo {
+    transform: translateX(-2000px);
+}
+
+.pr-text {
+    transform: translateX(2000px);
+}
+
 .fold-down-contr {
     font-size: 3em;
 }

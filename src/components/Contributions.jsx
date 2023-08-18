@@ -28,6 +28,17 @@ export default function Contributions() {
       duration: 1,
       transform: "translateX(0px)",
       opacity: 1,
+      onComplete: () => {
+        gsap.to(".pr-photo", {
+          scrollTrigger: {
+            trigger: ".pr-photo",
+            start: "top 100%",
+          },
+          duration: 1,
+          transform: "translateX(0px)",
+          opacity: 1,
+        });
+      },
     });
 
     gsap.to(".hvac-p", {
@@ -38,6 +49,17 @@ export default function Contributions() {
       duration: 1,
       transform: "translateX(0px)",
       opacity: 1,
+      onComplete: () => {
+        gsap.to(".pr-text", {
+          scrollTrigger: {
+            trigger: ".pr-text",
+            start: "top 100%",
+          },
+          duration: 1,
+          transform: "translateX(0px)",
+          opacity: 1,
+        });
+      },
     });
 
     gsap.to(".fly-left", {
@@ -178,9 +200,9 @@ export default function Contributions() {
           ></img>
         </div>
         <div className="lynx-description">
-          <p className="lynx-text">
-            I conduct Peer Reviews, finding issues in code, functionality of the
-            app, and improving the user experience.
+          <p className="pr-text">
+            I conduct Peer Reviews, finding issues in the code and in the
+            functionality of the app, and improving the user experience.
           </p>
         </div>
       </div>

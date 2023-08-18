@@ -47,7 +47,7 @@ export default function Education() {
         </a>
         <div id="ka-pic-and-text-flex">
           <p id="ka-text">
-            Kenzie Academy is a 12 months vocational style hands-on training
+            Kenzie Academy is a 12 month vocational style hands-on training
             program for Software Engineering. Here I first learned how to code,
             spending time working with coaches and instructors to learn the
             material, complete projects, and submit them for a grade.
