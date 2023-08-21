@@ -7,6 +7,7 @@ import vegaTouchAppHvac from "../resources/vegatouchcapphvac.jpg";
 import canTrace from '../resources/cantrace.png'
 import messageCenter from '../resources/messageCenter.png'
 import vegaTouchApp from "../resources/Peerreview.PNG";
+import fault from "../resources/Screenshotoffault.PNG";
 
 // components
 import BugSquasher from "./BugSquasher";
@@ -228,7 +229,11 @@ export default function Contributions() {
           I added a safety feature for some units to show slide and awning
           faults on the exterior page to warn end-users of a mechnical failure.
         </p>
-        <p>[Insert Image of app change here]</p>
+        <img
+          className="feature-img fly-right"
+          src={fault}
+          alt="screenshot of vegatouch mira app"
+        />
         <h3 className="fold-down-contr-6">
           BugFix - MessageCenter Additional Messages
         </h3>

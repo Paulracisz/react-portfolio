@@ -656,8 +656,24 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
+#form-warning-message {
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+#red-text {
+    color: red;
+    font-weight: normal;
+}
+
 .submit {
     margin: 20px;
+}
+
+input.submit:hover {
+    filter: brightness(50%);
+    cursor: pointer; 
 }
 
 
@@ -729,11 +745,14 @@ label {
     padding-bottom: 15px;
 }
 
-#readme-contents>img {
+p>img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+
+#axe-logo {
+    display: inline;
 }
 
 #readme-top-box>p {
