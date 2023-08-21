@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1881d48e.css",
-    "main.js": "/static/js/main.27bcc9aa.js",
+    "main.css": "/static/css/main.f863f479.css",
+    "main.js": "/static/js/main.0136f86a.js",
     "static/js/496.63294d96.chunk.js": "/static/js/496.63294d96.chunk.js",
     "static/media/heyyou.png": "/static/media/heyyou.d98f72c2f24214eba2e7.png",
     "static/media/youfoundthekitten.png": "/static/media/youfoundthekitten.2afda5300d3787230095.png",
     "static/media/kaimg.jpg": "/static/media/kaimg.2937a888f4afbcbaa4d4.jpg",
+    "static/media/cantrace.png": "/static/media/cantrace.f3349bd750aea80222ff.png",
     "static/media/metalking3.png": "/static/media/metalking3.7d65c9363d3829c19d3a.png",
+    "static/media/Screenshotoffault.PNG": "/static/media/Screenshotoffault.0bf6a2d6a925921c7562.PNG",
+    "static/media/messageCenter.png": "/static/media/messageCenter.d59991e3df8867c78913.png",
+    "static/media/Peerreview.PNG": "/static/media/Peerreview.78f23caaa846a6041025.PNG",
     "static/media/vegatouchapp.jpg": "/static/media/vegatouchapp.72490e813ea1a9cb1765.jpg",
     "static/media/vegatouchcapphvac.jpg": "/static/media/vegatouchcapphvac.0480d0929cf175a7f0c9.jpg",
     "static/media/kalogo.png": "/static/media/kalogo.80c9a528dfef544a9050.png",
@@ -17,12 +21,12 @@
     "static/media/splatter.svg": "/static/media/splatter.746d80183c6a80b06f6e5ed50897d894.svg",
     "index.html": "/index.html",
     "static/media/github-icon.PNG": "/static/media/github-icon.d84830b186819eb6ae49.PNG",
-    "main.1881d48e.css.map": "/static/css/main.1881d48e.css.map",
-    "main.27bcc9aa.js.map": "/static/js/main.27bcc9aa.js.map",
+    "main.f863f479.css.map": "/static/css/main.f863f479.css.map",
+    "main.0136f86a.js.map": "/static/js/main.0136f86a.js.map",
     "496.63294d96.chunk.js.map": "/static/js/496.63294d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1881d48e.css",
-    "static/js/main.27bcc9aa.js"
+    "static/css/main.f863f479.css",
+    "static/js/main.0136f86a.js"
   ]
 }
