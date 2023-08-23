@@ -656,6 +656,67 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
+#volunteer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25%;
+    align-items: center;
+}
+
+.box-top {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+    padding-top: 15px;
+    margin: 16px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-top>h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box-top>a>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box-text {
+    text-decoration: none !important;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 25px;
+    width: 100%;
+}
+
+.box-top>a {
+    text-decoration-color: #007bff;
+}
+
+.box-thumb {
+    padding-bottom: 15px;
+    height: 25em;
+}
+
+.box-thumb:hover {
+    cursor: pointer;
+    filter:brightness(50%);
+    transition: 0.2s ease all;
+}
+
+.box-top>h2 {
+    color: black;
+}
+
 #form-warning-message {
     text-shadow: 1px 1px black;
     font-weight: bold;

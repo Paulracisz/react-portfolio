@@ -7,6 +7,8 @@ import GitLabLogo from "../resources/gitlab-logo.png";
 import AxeLogo from "../resources/axelogoapproved.png";
 import MePic from "../resources/metalking3.png";
 import ReadMeIcon from "../resources/github-icon.PNG";
+import CFTThumb from "../resources/cftthumbnail.png";
+import DaggerfallUnityUpdater from "../resources/daggerfallunityupdater.PNG";
 
 // stylesheets
 import "../stylesheets/homepage.css";
@@ -30,17 +32,32 @@ import Fullpage from "../components/Fullpage";
 init("user_8H2okSIPMyJBrfkGMvZv4");
 
 /*
+--------------------------------------------------------
 TODO:
+
 POSSIBLY ADD CAPTCHA FOR CONTACT FORM []
-ADD PROJECTS FROM KENZIE []
+
 FIX AXE WEB ACCESABILITY ISSUES []
+
 MAKE DOWNLOAD RESUME LINK TO GOOGLE DRIVE OR GOOGLE DOCS []
-ADD WHAT USERS ARE SAYING ABOUT OUR APP SECTION []
-ADD VOLUNTEER WORK SECTION []
-ADD OPEN SOURCE CONTRIBUTIONS SECTION []
+
+ADD STICKY HAMBURGER MENU ICON THAT WHEN CLICKED REVEALS A MENU WITH OPTIONS TO GO TO DIFFERENT SECTIONS OF THE WEBSITE:
+EXPERIENCE
+EDUCATION
+PROJECTS
+OPEN SOURCE CONTRIBTUIONS
+VOLUNTEER WORK
+CONTACT
+RESUME
+[]
+----------------------------------------------------------
 
 
+----------------------------------------------------------
 COMPLETED: 
+ADD OPEN SOURCE CONTRIBUTIONS SECTION [X]
+ADD VOLUNTEER WORK SECTION [X]
+ADD PROJECTS FROM KENZIE [X]
 ADD IMAGES FOR CONTRIBUTIONS [X]
 CENTER IMAGES IN GITHUB README VIEWER [X]
 ADD HOVER ANIMATION FOR SEND BUTTON ON CONTACT FORM [X]
@@ -48,17 +65,18 @@ ADD REQUIRED FIELDS FOR NAME EMAIL AND MESSAGE FOR MAIL.JS [X]
 ADD ONE MORE THING IN SO WHAT DO I DO THERE SECTION [X]
 MAKE GSAP ANIMATIONS FOR CONTRIBUTION TEXT AND IMAGES [X]
 ADD ARROWS TO MOVE BETWEEN GITHUB README PROJECTS [X]
+----------------------------------------------------------
 */
 
 export default function HomePage() {
   function moveToSlide(index) {
-    let currentSlide = document.getElementsByClassName(`slide-${index}`)[0];
-    let firstSlide = document.getElementsByClassName("slide-1")[0];
-    let secondSlide = document.getElementsByClassName("slide-2")[0];
-    let thirdSlide = document.getElementsByClassName("slide-3")[0];
-    let firstRadioButton = document.getElementsByClassName("radio-1")[0];
-    let secondRadioButton = document.getElementsByClassName("radio-2")[0];
-    let thirdRadioButton = document.getElementsByClassName("radio-3")[0];
+    let currentSlide = document.getElementsByClassName(`slide-${index}`)[1];
+    let firstSlide = document.getElementsByClassName("slide-1")[1];
+    let secondSlide = document.getElementsByClassName("slide-2")[1];
+    let thirdSlide = document.getElementsByClassName("slide-3")[1];
+    let firstRadioButton = document.getElementsByClassName("radio-1")[1];
+    let secondRadioButton = document.getElementsByClassName("radio-2")[1];
+    let thirdRadioButton = document.getElementsByClassName("radio-3")[1];
     currentSlide.style.transform = "translateX(0px)";
     currentSlide.style.height = "100%";
     switch (index) {
@@ -244,6 +262,76 @@ export default function HomePage() {
                   repository={"sales-table"}
                 />
               </div>
+            </div>
+          </div>
+        </div>
+        <div id="volunteer-box">
+          <h2 className="volunteer-header">Volunteer Work</h2>
+          <div className="box-flex">
+            <div className="box-top">
+              <h2>Christian Faith Tabernacle Church Website</h2>
+              <a
+                href="https://cftabernacle.com/"
+                rel="no opener no referrer"
+                target="_blank"
+              >
+                <img
+                  src={CFTThumb}
+                  alt="screen shot of the church website"
+                  className="box-thumb"
+                />
+              </a>
+              <p className="box-text">
+                {" "}
+                Created, deployed, and hosted a church website for Christian
+                Faith Tabernacle Church that includes information about the
+                church's location, tithing information, prayer request form, and
+                principles that the church abides by.
+              </p>
+              <a
+                href="https://github.com/Paulracisz/cftabernacle"
+                rel="no opener no referrer"
+                target="_blank"
+              >
+                Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="volunteer-box">
+          <h2 className="volunteer-header">Open Source Contributions</h2>
+          <div className="box-flex">
+            <div className="box-top">
+              <h2>Daggerfall Unity Launcher</h2>
+              <a
+                href="https://github.com/travis-racisz/daggerfall-unity-launcher"
+                rel="no opener no referrer"
+                target="_blank"
+              >
+                <img
+                  src={DaggerfallUnityUpdater}
+                  alt="screen shot of the church website"
+                  className="box-thumb"
+                />
+              </a>
+              <p className="box-text">
+                {" "}
+                An Electron App used for the Daggerfall Unity game, a
+                remastering of the 1994 Elder Scrolls RPG Game Daggerfall in the
+                Unity game engine. This launcher and updater app allows you to
+                update the Daggerfall Unity game without having to go to the
+                distrubutions page and delete and re-install the files. I added
+                the ability to view any mods installed, and re-vamped the
+                styling of the app.
+              </p>
+              <a
+                href="https://github.com/travis-racisz/daggerfall-unity-launcher"
+                rel="no opener no referrer"
+                target="_blank"
+              >
+                Repository
+              </a>
             </div>
           </div>
         </div>

@@ -12,8 +12,94 @@
     border-radius: 50%;
     padding: 15px;
     opacity: 0;
+    margin-top: 20px;
     transform: translateX(4000px);
 }
+
+.box-top {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+    padding-top: 15px;
+    margin: 16px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide-3-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert {
+    height: 35em;
+}
+
+.cert-text-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-top>h2 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.box-top>a>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.box-text {
+    text-decoration: none !important;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 25px;
+    width: 100%;
+}
+
+.box-top>a {
+    text-decoration-color: #007bff;
+}
+
+.box-thumb {
+    padding-bottom: 15px;
+    height: 25em;
+}
+
+.box-thumb:hover {
+    cursor: pointer;
+    filter:brightness(50%);
+    transition: 0.2s ease all;
+}
+
+.box-top>h2 {
+    color: white;
+}
+
 
 #img-cover-div {
     position: absolute;
