@@ -72,6 +72,9 @@ export default function HomePage() {
   function toggleHamburgerMenu() {
     let hamburgerMenu = document.getElementById("hamburger-menu");
     hamburgerMenu.hidden = !hamburgerMenu.hidden;
+    if (hamburgerMenu.hidden) {
+      // create animation for when the hamburger menu is closed or open
+    }
   }
 
   function jumpTo(anchorPoint) {
