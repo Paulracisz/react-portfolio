@@ -69,6 +69,15 @@ ADD ARROWS TO MOVE BETWEEN GITHUB README PROJECTS [X]
 */
 
 export default function HomePage() {
+  function toggleHamburgerMenu() {
+    let hamburgerMenu = document.getElementById("hamburger-menu");
+    hamburgerMenu.hidden = !hamburgerMenu.hidden;
+  }
+
+  function jumpTo(anchorPoint) {
+    // write function that will take the anchor tag label as the param, and jump to that point in the page.
+  }
+
   function moveToSlide(index) {
     let currentSlide = document.getElementsByClassName(`slide-${index}`)[1];
     let firstSlide = document.getElementsByClassName("slide-1")[1];
@@ -156,6 +165,39 @@ export default function HomePage() {
 
   return (
     <>
+      <div onClick={toggleHamburgerMenu} id="sticky-hamburger">
+        <div id="hamburger">
+          <div className="hamburger-stick"></div>
+          <div className="hamburger-stick"></div>
+          <div className="hamburger-stick"></div>
+          <div id="hamburger-menu" hidden={true}>
+            <div className="hamburger-label" onClick={jumpTo("experience")}>
+              Experience
+            </div>
+            <div className="hamburger-label" onClick={jumpTo("experience")}>
+              Work Contributions
+            </div>
+            <div className="hamburger-label" onClick={jumpTo("education")}>
+              Education
+            </div>
+            <div className="hamburger-label" onClick={jumpTo("projects")}>
+              Projects
+            </div>
+            <div className="hamburger-label" onClick={jumpTo("volunteer-work")}>
+              Volunteer Work
+            </div>
+            <div
+              className="hamburger-label"
+              onClick={jumpTo("open-source-contributions")}
+            >
+              Open Source Contributions
+            </div>
+            <div className="hamburger-label" onClick={jumpTo("contact")}>
+              Contact
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="big">
         <div id="parallax">
           <h3 id="Iam">

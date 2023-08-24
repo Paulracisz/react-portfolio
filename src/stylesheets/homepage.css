@@ -599,6 +599,70 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
 }
 
+#sticky-hamburger {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000000000;
+    transition: 0.2s all ease;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.518);
+    border-radius: 500px;
+}
+
+#hamburger {
+    width:50%;
+    height: 30%;
+    display: flex;
+    transition: 0.2s ease all;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-stick {
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+    height: 5px
+}
+
+#hamburger-menu {
+    position: absolute;
+    width: 200px;
+    padding: 0;
+    transition: 0.2s ease all;
+    top: 70px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.511);
+}
+
+.hamburger-label {
+    border-bottom: 2px solid black;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    border-width: 100%;
+}
+
+.hamburger-label:hover {
+    background-color: rgba(143, 143, 143, 0.568);
+}
+
+#hamburger-menu:hover {
+    background-color: white;
+}
+
+#sticky-hamburger:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
 .slide-1 {
     transform: translateX(0px);
 }
