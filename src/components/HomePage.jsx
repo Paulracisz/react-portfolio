@@ -41,6 +41,14 @@ FIX AXE WEB ACCESABILITY ISSUES []
 
 MAKE DOWNLOAD RESUME LINK TO GOOGLE DRIVE OR GOOGLE DOCS []
 
+WRITE MEDIA QUERIES FOR NEW CONTENT []
+
+WRITE MEDIA QUERY TO MAKE THE HAMBURGER MENU A BIT SMALLER []
+
+----------------------------------------------------------
+
+
+----------------------------------------------------------
 ADD STICKY HAMBURGER MENU ICON THAT WHEN CLICKED REVEALS A MENU WITH OPTIONS TO GO TO DIFFERENT SECTIONS OF THE WEBSITE:
 EXPERIENCE
 EDUCATION
@@ -49,11 +57,7 @@ OPEN SOURCE CONTRIBTUIONS
 VOLUNTEER WORK
 CONTACT
 RESUME
-[]
-----------------------------------------------------------
-
-
-----------------------------------------------------------
+[X]
 COMPLETED: 
 ADD OPEN SOURCE CONTRIBUTIONS SECTION [X]
 ADD VOLUNTEER WORK SECTION [X]
@@ -71,9 +75,24 @@ ADD ARROWS TO MOVE BETWEEN GITHUB README PROJECTS [X]
 export default function HomePage() {
   function toggleHamburgerMenu() {
     let hamburgerMenu = document.getElementById("hamburger-menu");
+    let hamburger = document.getElementById("hamburger");
+    let hamburgerStick = document.getElementsByClassName("hamburger-stick");
     hamburgerMenu.hidden = !hamburgerMenu.hidden;
     if (hamburgerMenu.hidden) {
+      for (let i = 0; i < hamburgerStick.length; i++) {
+        hamburgerStick[i].style.width = "100%";
+        hamburger.style.flexDirection = "column";
+        hamburger.style.justifyContent = "space-between";
+        hamburgerStick[i].style.height = "5px";
+      }
       // create animation for when the hamburger menu is closed or open
+    } else if (!hamburgerMenu.hidden) {
+      for (let i = 0; i < hamburgerStick.length; i++) {
+        hamburgerStick[i].style.width = "5px";
+        hamburger.style.flexDirection = "row";
+        hamburger.style.justifyContent = "space-around";
+        hamburgerStick[i].style.height = "100%";
+      }
     }
   }
 
@@ -174,29 +193,42 @@ export default function HomePage() {
           <div className="hamburger-stick"></div>
           <div className="hamburger-stick"></div>
           <div id="hamburger-menu" hidden={true}>
-            <div className="hamburger-label" onClick={jumpTo("experience")}>
-              Experience
+            <div className="hamburger-label">
+              <a className="hamburger-anchor" href="#experience">
+                Experience
+              </a>
             </div>
-            <div className="hamburger-label" onClick={jumpTo("experience")}>
-              Work Contributions
+            <div className="hamburger-label">
+              <a className="hamburger-anchor" href="#work-contributions">
+                Work Contributions
+              </a>
             </div>
-            <div className="hamburger-label" onClick={jumpTo("education")}>
-              Education
+            <div className="hamburger-label">
+              <a className="hamburger-anchor" href="#education">
+                Education
+              </a>
             </div>
-            <div className="hamburger-label" onClick={jumpTo("projects")}>
-              Projects
+            <div className="hamburger-label">
+              <a className="hamburger-anchor" href="#projects">
+                Projects
+              </a>
             </div>
-            <div className="hamburger-label" onClick={jumpTo("volunteer-work")}>
-              Volunteer Work
+            <div className="hamburger-label">
+              {" "}
+              <a className="hamburger-anchor" href="#volunteer-work">
+                Volunteer Work
+              </a>
             </div>
-            <div
-              className="hamburger-label"
-              onClick={jumpTo("open-source-contributions")}
-            >
-              Open Source Contributions
+            <div className="hamburger-label">
+              <a className="hamburger-anchor" href="#open-source-contributions">
+                Open Source Contributions
+              </a>
             </div>
-            <div className="hamburger-label" onClick={jumpTo("contact")}>
-              Contact
+            <div className="hamburger-label">
+              {" "}
+              <a className="hamburger-anchor" href="#contact">
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -214,9 +246,11 @@ export default function HomePage() {
         </div>
         <div className="divider"></div>
         <div id="parallax2">
+          <h2 id="experience"></h2>
           <Experience />
         </div>
         <div id="parallax3">
+          <h2 id="projects"></h2>
           <h1 className="education-text">Projects</h1>
           <div className="slides-container">
             <div id="radio-container">
@@ -311,6 +345,7 @@ export default function HomePage() {
           </div>
         </div>
         <div id="volunteer-box">
+          <h2 id="volunteer-work"></h2>
           <h2 className="volunteer-header">Volunteer Work</h2>
           <div className="box-flex">
             <div className="box-top">
@@ -345,6 +380,7 @@ export default function HomePage() {
         </div>
 
         <div id="volunteer-box">
+          <h2 id="open-source-contributions"></h2>
           <h2 className="volunteer-header">Open Source Contributions</h2>
           <div className="box-flex">
             <div className="box-top">
@@ -381,6 +417,7 @@ export default function HomePage() {
           </div>
         </div>
         <div id="contact-box">
+          <h2 id="contact"></h2>
           <h2 id="header2">Contact Me</h2>
           <ContactUs />
         </div>

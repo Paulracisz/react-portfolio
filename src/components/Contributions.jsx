@@ -208,6 +208,7 @@ export default function Contributions() {
         </div>
       </div>
       <div className="features-flexbox">
+        <h2 id="work-contributions"></h2>
         <h3 className="fold-down-contr">So what features did I contribute?</h3>
         <h3 className="fold-down-contr-2">
           Internal Tool - App Diag Can Trace

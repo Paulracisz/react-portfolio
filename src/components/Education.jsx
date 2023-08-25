@@ -90,7 +90,9 @@ export default function Education() {
   return (
     <>
       <div id="big-container">
-        <h1 className="education-text">Education</h1>
+        <h1 id="education" className="education-text">
+          Education
+        </h1>
         <div className="slides-container">
           <div id="radio-container">
             <div
