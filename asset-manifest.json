@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f863f479.css",
-    "main.js": "/static/js/main.0136f86a.js",
+    "main.css": "/static/css/main.e3038be2.css",
+    "main.js": "/static/js/main.69a06931.js",
     "static/js/496.63294d96.chunk.js": "/static/js/496.63294d96.chunk.js",
+    "static/media/cftthumbnail.png": "/static/media/cftthumbnail.803a4b25648d522ac8a8.png",
     "static/media/heyyou.png": "/static/media/heyyou.d98f72c2f24214eba2e7.png",
     "static/media/youfoundthekitten.png": "/static/media/youfoundthekitten.2afda5300d3787230095.png",
+    "static/media/b4screen.PNG": "/static/media/b4screen.527e27c8ecebb8e552c1.PNG",
     "static/media/kaimg.jpg": "/static/media/kaimg.2937a888f4afbcbaa4d4.jpg",
     "static/media/cantrace.png": "/static/media/cantrace.f3349bd750aea80222ff.png",
+    "static/media/GOCSCREEN.PNG": "/static/media/GOCSCREEN.c3ea865dc8982810c52a.PNG",
+    "static/media/sportslab.PNG": "/static/media/sportslab.98ea94c203228f3c3f18.PNG",
     "static/media/metalking3.png": "/static/media/metalking3.7d65c9363d3829c19d3a.png",
     "static/media/Screenshotoffault.PNG": "/static/media/Screenshotoffault.0bf6a2d6a925921c7562.PNG",
+    "static/media/fullstackcert.png": "/static/media/fullstackcert.3b43534c1dab97bbd134.png",
+    "static/media/frontendcert.png": "/static/media/frontendcert.b84ee09a356e78b635f6.png",
+    "static/media/daggerfallunityupdater.PNG": "/static/media/daggerfallunityupdater.a9997de47b325e427535.PNG",
     "static/media/messageCenter.png": "/static/media/messageCenter.d59991e3df8867c78913.png",
     "static/media/Peerreview.PNG": "/static/media/Peerreview.78f23caaa846a6041025.PNG",
     "static/media/vegatouchapp.jpg": "/static/media/vegatouchapp.72490e813ea1a9cb1765.jpg",
@@ -21,12 +28,12 @@
     "static/media/splatter.svg": "/static/media/splatter.746d80183c6a80b06f6e5ed50897d894.svg",
     "index.html": "/index.html",
     "static/media/github-icon.PNG": "/static/media/github-icon.d84830b186819eb6ae49.PNG",
-    "main.f863f479.css.map": "/static/css/main.f863f479.css.map",
-    "main.0136f86a.js.map": "/static/js/main.0136f86a.js.map",
+    "main.e3038be2.css.map": "/static/css/main.e3038be2.css.map",
+    "main.69a06931.js.map": "/static/js/main.69a06931.js.map",
     "496.63294d96.chunk.js.map": "/static/js/496.63294d96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f863f479.css",
-    "static/js/main.0136f86a.js"
+    "static/css/main.e3038be2.css",
+    "static/js/main.69a06931.js"
   ]
 }
