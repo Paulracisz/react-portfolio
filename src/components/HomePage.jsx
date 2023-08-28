@@ -194,37 +194,24 @@ export default function HomePage() {
           <div className="hamburger-stick"></div>
           <div className="hamburger-stick"></div>
           <div id="hamburger-menu" hidden={true}>
-            <div className="hamburger-label">
-              <a className="hamburger-anchor" href="#experience">
-                Experience
-              </a>
-            </div>
-            <div className="hamburger-label">
-              <a className="hamburger-anchor" href="#work-contributions">
-                Work Contributions
-              </a>
-            </div>
-            <div className="hamburger-label">
-              <a className="hamburger-anchor" href="#education">
-                Education
-              </a>
-            </div>
-            <div className="hamburger-label">
-              <a className="hamburger-anchor" href="#projects">
-                Projects
-              </a>
-            </div>
-            <div className="hamburger-label">
-              {" "}
-              <a className="hamburger-anchor" href="#volunteer-work">
-                Volunteer Work
-              </a>
-            </div>
-            <div className="hamburger-label">
-              <a className="hamburger-anchor" href="#open-source-contributions">
-                Open Source Contributions
-              </a>
-            </div>
+            <a className="hamburger-anchor" href="#experience">
+              <div className="hamburger-label">Experience</div>
+            </a>
+            <a className="hamburger-anchor" href="#work-contributions">
+              <div className="hamburger-label">Work Contributions</div>
+            </a>
+            <a className="hamburger-anchor" href="#education">
+              <div className="hamburger-label">Education</div>
+            </a>
+            <a className="hamburger-anchor" href="#projects">
+              <div className="hamburger-label">Projects</div>
+            </a>
+            <a className="hamburger-anchor" href="#volunteer-work">
+              <div className="hamburger-label">Volunteer Work</div>
+            </a>
+            <a className="hamburger-anchor" href="#open-source-contributions">
+              <div className="hamburger-label">Open Source Contributions</div>
+            </a>
             <div className="hamburger-label">
               {" "}
               <a className="hamburger-anchor" href="#contact">
@@ -384,7 +371,7 @@ export default function HomePage() {
           <h2 id="open-source-contributions"></h2>
           <h2 className="volunteer-header">Open Source Contributions</h2>
           <div className="box-flex">
-            <div className="box-top"  id="open-source-box-top">
+            <div className="box-top" id="open-source-box-top">
               <h2>Daggerfall Unity Launcher</h2>
               <a
                 href="https://github.com/travis-racisz/daggerfall-unity-launcher"

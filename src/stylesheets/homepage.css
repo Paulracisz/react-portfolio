@@ -637,6 +637,11 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
 }
 
+.hamburger-anchor:hover {
+    text-decoration: none;
+    color: black;
+}
+
 #hamburger-menu {
     position: absolute;
     width: 200px;
