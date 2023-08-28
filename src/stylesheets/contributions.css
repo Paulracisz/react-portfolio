@@ -12,6 +12,14 @@
     opacity: 0;   
 }
 
+.pr-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: row;
+}
+
 .pr-photo {
     width: 20em;
     object-fit: contain;
@@ -46,6 +54,10 @@
     transform: translateX(2000px);
 }
 
+.pr-text {
+    padding: 10px;
+}
+
 .fold-down-contr {
     font-size: 3em;
 }
@@ -66,7 +78,10 @@
 
 .hvac-description {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    font-size: 35px;
+    flex-direction: row;
 }
 
 .feature-img {
@@ -101,4 +116,24 @@
         margin-left: 0px;
         padding:15px;
     }
+    
+    h3 {
+        font-size: 1.5em !important;
+    }
+    
+    p {
+        font-size: 16px !important;
+    }
+    
+    .feature-img {
+        width: 15em;
+    }
+    
+    .pr-photo {
+        width: 250px;
+        margin: 5px;
+        object-fit: cover;
+    }
 }
+
+

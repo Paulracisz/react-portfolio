@@ -35,7 +35,6 @@ init("user_8H2okSIPMyJBrfkGMvZv4");
 --------------------------------------------------------
 TODO:
 
-POSSIBLY ADD CAPTCHA FOR CONTACT FORM []
 
 FIX AXE WEB ACCESABILITY ISSUES []
 
@@ -47,6 +46,8 @@ WRITE MEDIA QUERY TO MAKE THE HAMBURGER MENU A BIT SMALLER []
 
 ----------------------------------------------------------
 
+SCRAPPED:
+POSSIBLY ADD CAPTCHA FOR CONTACT FORM
 
 ----------------------------------------------------------
 ADD STICKY HAMBURGER MENU ICON THAT WHEN CLICKED REVEALS A MENU WITH OPTIONS TO GO TO DIFFERENT SECTIONS OF THE WEBSITE:
@@ -348,7 +349,7 @@ export default function HomePage() {
           <h2 id="volunteer-work"></h2>
           <h2 className="volunteer-header">Volunteer Work</h2>
           <div className="box-flex">
-            <div className="box-top">
+            <div className="box-top" id="volunteer-box-top">
               <h2>Christian Faith Tabernacle Church Website</h2>
               <a
                 href="https://cftabernacle.com/"
@@ -383,7 +384,7 @@ export default function HomePage() {
           <h2 id="open-source-contributions"></h2>
           <h2 className="volunteer-header">Open Source Contributions</h2>
           <div className="box-flex">
-            <div className="box-top">
+            <div className="box-top"  id="open-source-box-top">
               <h2>Daggerfall Unity Launcher</h2>
               <a
                 href="https://github.com/travis-racisz/daggerfall-unity-launcher"

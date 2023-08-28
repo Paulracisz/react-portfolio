@@ -942,6 +942,70 @@ li {
         display: flex;
         flex-direction: column;
     }
+    
+    
+#sticky-hamburger {
+    width: 80px;
+    height: 80px;
+}
+
+.box-flex {
+    flex-direction: column;
+}
+
+.cert {
+    width: 85%;
+    object-fit: contain;  
+}
+
+.volunteer-header {
+    text-align: center;
+}
+
+#volunteer-box-top {
+    width: 70% !important ;
+}
+
+#open-source-box-top {
+    width: 70% !important ;
+}
+
+.box-top {
+    width: 70% !important;
+}
+
+.cert-text {
+    font-size: 16px;
+}
+
+.cert-flex {
+    flex-direction: column !important;
+}
+
+#readme-contents>h1 {
+    font-size: 25px;
+}
+
+#readme-contents>p {
+    font-size: 12px !important;
+}
+
+#hamburger-menu {
+    width: 150px;
+}
+
+.hvac-p {
+    width: 25%;
+}
+
+
+.hvac-photo {
+    width: 10em;
+}
+
+.hamburger-label {
+    font-size: 16px;
+}
 
     #resume-img {
         object-fit: contain;

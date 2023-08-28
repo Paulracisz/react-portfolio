@@ -178,21 +178,20 @@ export default function Contributions() {
   }, []);
   return (
     <div className="">
-      <div className="experience-grid">
-        <div className="hvac-description">
-          <p className="hvac-p">
-            I implement controls for new heating and cooling systems.
-          </p>
-        </div>
+      <div className="hvac-description">
+        <p className="hvac-p">
+          I implement controls for new heating and cooling systems.
+        </p>
 
         <div className="hvac-photo">
           <img
-            className="hvac-photo"
+            className="lynx-screen"
             src={vegaTouchAppHvac}
             alt="vegatouch mira app screenshot of the HVAC page from firefly integrations"
           ></img>
         </div>
-
+      </div>
+      <div className="pr-flex">
         <div className="lynx-photo">
           <img
             className="pr-photo"
