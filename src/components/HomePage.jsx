@@ -212,12 +212,11 @@ export default function HomePage() {
             <a className="hamburger-anchor" href="#open-source-contributions">
               <div className="hamburger-label">Open Source Contributions</div>
             </a>
-            <div className="hamburger-label">
-              {" "}
               <a className="hamburger-anchor" href="#contact">
+              <div className="hamburger-label">
                 Contact
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
