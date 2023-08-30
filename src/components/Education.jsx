@@ -94,20 +94,17 @@ export default function Education() {
           Education
         </h1>
         <div className="slides-container">
-          <div id="radio-container">
+          <div className="radio-container">
             <div
-              id="radio-buttons"
-              className="radio-1"
+              className="radio-buttons radio-1"
               onClick={() => moveToSlide(1)}
             ></div>
             <div
-              id="radio-buttons"
-              className="radio-2"
+              className="radio-buttons radio-2"
               onClick={() => moveToSlide(2)}
             ></div>
             <div
-              id="radio-buttons"
-              className="radio-3"
+              className="radio-buttons radio-3"
               onClick={() => moveToSlide(3)}
             ></div>
           </div>
@@ -233,7 +230,11 @@ export default function Education() {
             <div className="slide-3-flex">
               <h2>Front-End Web Development Certification </h2>
               <div className="cert-flex">
-                <img src={FrontendCert} className="cert"></img>{" "}
+                <img
+                  alt="certification"
+                  src={FrontendCert}
+                  className="cert"
+                ></img>{" "}
                 <div className="cert-text-flex">
                   <h2 className="cert-text">
                     Accredited by Butler University.
@@ -243,7 +244,11 @@ export default function Education() {
               </div>
               <h2>Full-Stack Web Development Certification </h2>
               <div className="cert-flex">
-                <img src={FullstackCert} className="cert"></img>
+                <img
+                  alt="certification"
+                  src={FullstackCert}
+                  className="cert"
+                ></img>
                 <div className="cert-text-flex">
                   <h2 className="cert-text">
                     Accredited by Butler University.

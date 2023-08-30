@@ -19,7 +19,7 @@
 .box-top {
     display: flex;
     flex-direction: column;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(255, 255, 255);
     padding-top: 15px;
     margin: 16px;
     width: 25%;
@@ -27,7 +27,7 @@
     align-items: center;
     padding-bottom: 15px;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 
 .box-flex {
@@ -74,7 +74,7 @@
 
 .box-text {
     text-decoration: none !important;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     padding: 25px;
@@ -83,6 +83,8 @@
 
 .box-top>a {
     text-decoration-color: #007bff;
+    color: #005dc1;
+    font-weight: bold;
 }
 
 .box-thumb {
@@ -97,7 +99,7 @@
 }
 
 .box-top>h2 {
-    color: white;
+    color: black;
 }
 
 

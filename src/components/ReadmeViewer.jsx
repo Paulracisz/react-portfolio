@@ -20,7 +20,10 @@ const ReadmeViewer = ({ username, repository }) => {
   }, [username, repository]);
 
   return (
-    <div id="readme-contents" dangerouslySetInnerHTML={{ __html: html }} />
+    <div
+      className="readme-contents"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 };
 

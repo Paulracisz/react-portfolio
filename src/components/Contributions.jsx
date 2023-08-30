@@ -212,7 +212,7 @@ export default function Contributions() {
         <h3 className="fold-down-contr-2">
           Internal Tool - App Diag Can Trace
         </h3>
-        <p id="feature-info-text" className="fold-down-contr-3">
+        <p className="feature-info-text fold-down-contr-3">
           I added a diagnostics page that allows technicians to diagnose
           specific hardware related issues in a unit while assisting end users.
         </p>
@@ -225,7 +225,7 @@ export default function Contributions() {
         <h3 className="fold-down-contr-4">
           Feature - Adding Faults To Exterior Pages
         </h3>
-        <p id="feature-info-text" className="fold-down-contr-5">
+        <p className="feature-info-text fold-down-contr-5">
           I added a safety feature for some units to show slide and awning
           faults on the exterior page to warn end-users of a mechnical failure.
         </p>
@@ -237,7 +237,7 @@ export default function Contributions() {
         <h3 className="fold-down-contr-6">
           BugFix - MessageCenter Additional Messages
         </h3>
-        <p id="feature-info-text" className="fold-down-contr-7">
+        <p className="feature-info-text fold-down-contr-7">
           I fixed a previously non-functional feature in VegaTouch Eclipse that
           now allows custom fault messages to appear in the message center. This
           feature is used for warning users of hardware failures, and parts that

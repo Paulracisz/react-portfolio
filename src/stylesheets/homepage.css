@@ -587,11 +587,11 @@ body::-webkit-scrollbar-thumb {
     width: 25px;
 }
 
-#radio-container {
+.radio-container {
     display: flex;
 }
 
-#radio-buttons {
+.radio-buttons {
     height: 10px;
     width: 10px;
     margin: 10px;
@@ -702,7 +702,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#radio-buttons:hover {
+.radio-buttons:hover {
     cursor: pointer;
     filter: brightness(50%);
 }
@@ -734,7 +734,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-#volunteer-box {
+.volunteer-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -745,7 +745,7 @@ body::-webkit-scrollbar-thumb {
 .box-top {
     display: flex;
     flex-direction: column;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(212, 212, 212);
     padding-top: 15px;
     margin: 16px;
     width: 25%;
@@ -753,7 +753,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     padding-bottom: 15px;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 
 .box-top>h2 {
@@ -777,7 +777,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box-top>a {
-    text-decoration-color: #007bff;
+    text-decoration-color: #001b38;
 }
 
 .box-thumb {
@@ -855,7 +855,7 @@ label {
     transition: 0.5 ease all;
 }
 
-#readme-box {
+.readme-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -874,12 +874,12 @@ label {
     flex-direction: column;
 }
 
-#readme-contents {
+.readme-contents {
     padding: 15px;
 }
 
-#readme-contents>h2,
-#readme-contents>h1 {
+.readme-contents>h2,
+.readme-contents>h1 {
     border-bottom: 1px solid #21262D;
     padding-bottom: 15px;
 }
@@ -894,27 +894,27 @@ p>img {
     display: inline;
 }
 
-#readme-top-box>p {
+.readme-top-box>p {
     display: inline;
 }
 
-#readme-top-box>p>a {
+.readme-top-box>p>a {
     color: white;
     text-decoration: none;
 }
 
-#readme-top-box>p>a:hover {
+.readme-top-box>p>a:hover {
     color: #0044cc;
     text-decoration: underline;
 }
 
-#readme-logo {
+.readme-logo {
     width: 2em;
     display: inline;
     height: 2em;
 }
 
-#readme-top-box {
+.readme-top-box {
     border: 1px solid #21262D;
     border-left: none;
     padding: 15px;
@@ -967,7 +967,7 @@ li {
     text-align: center;
 }
 
-#volunteer-box-top {
+.volunteer-box-top {
     width: 70% !important ;
 }
 
@@ -987,11 +987,11 @@ li {
     flex-direction: column !important;
 }
 
-#readme-contents>h1 {
+.readme-contents>h1 {
     font-size: 25px;
 }
 
-#readme-contents>p {
+.readme-contents>p {
     font-size: 12px !important;
 }
 
@@ -1129,7 +1129,7 @@ li {
         object-fit: cover;
     }
 
-    #readme-box {
+    .readme-box {
         width: 75%;
     }
 

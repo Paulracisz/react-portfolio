@@ -40,16 +40,14 @@ FIX AXE WEB ACCESABILITY ISSUES []
 
 MAKE DOWNLOAD RESUME LINK TO GOOGLE DRIVE OR GOOGLE DOCS []
 
-WRITE MEDIA QUERIES FOR NEW CONTENT []
-
-WRITE MEDIA QUERY TO MAKE THE HAMBURGER MENU A BIT SMALLER []
-
 ----------------------------------------------------------
 
 SCRAPPED:
 POSSIBLY ADD CAPTCHA FOR CONTACT FORM
 
 ----------------------------------------------------------
+WRITE MEDIA QUERIES FOR NEW CONTENT [X]
+WRITE MEDIA QUERY TO MAKE THE HAMBURGER MENU A BIT SMALLER [X]
 ADD STICKY HAMBURGER MENU ICON THAT WHEN CLICKED REVEALS A MENU WITH OPTIONS TO GO TO DIFFERENT SECTIONS OF THE WEBSITE:
 EXPERIENCE
 EDUCATION
@@ -227,7 +225,7 @@ export default function HomePage() {
             applies his dedication and creative innovation to continuously craft
             future focused results."
           </h3>
-          <div id="pic-flex">
+          <div id="pic-flex" tabindex={0}>
             <img id="me-pic" src={MePic} alt="Card cap" />
           </div>
         </div>
@@ -240,27 +238,24 @@ export default function HomePage() {
           <h2 id="projects"></h2>
           <h1 className="education-text">Projects</h1>
           <div className="slides-container">
-            <div id="radio-container">
+            <div className="radio-container">
               <div
-                id="radio-buttons"
-                className="radio-1"
+                className="radio-buttons radio-1"
                 onClick={() => moveToSlide(1)}
               ></div>
               <div
-                id="radio-buttons"
-                className="radio-2"
+                className="radio-buttons radio-2"
                 onClick={() => moveToSlide(2)}
               ></div>
               <div
-                id="radio-buttons"
-                className="radio-3"
+                className="radio-buttons radio-3"
                 onClick={() => moveToSlide(3)}
               ></div>
             </div>
-            <div id="readme-box" className="slide-1">
-              <div id="readme-top-box">
+            <div className="readme-box slide-1">
+              <div className="readme-top-box">
                 <img
-                  id="readme-logo"
+                 className="readme-logo"
                   alt="a small hamburger style icon of the github readme menu option"
                   src={ReadMeIcon}
                 />
@@ -274,17 +269,17 @@ export default function HomePage() {
                   </a>
                 </p>
               </div>
-              <div id="readme-contents">
+              <div className="readme-contents">
                 <ReadmeViewer
                   username={"paulRacisz"}
                   repository={"Core-Christian-Living-Blog"}
                 />
               </div>
             </div>
-            <div id="readme-box" className="slide-2">
-              <div id="readme-top-box">
+            <div className="readme-box slide-2">
+              <div className="readme-top-box">
                 <img
-                  id="readme-logo"
+                 className="readme-logo"
                   alt="a small hamburger style icon of the github readme menu option"
                   src={ReadMeIcon}
                 />
@@ -298,17 +293,17 @@ export default function HomePage() {
                   </a>
                 </p>
               </div>
-              <div id="readme-contents">
+              <div className="readme-contents">
                 <ReadmeViewer
                   username={"paulRacisz"}
                   repository={"Fishing-Game"}
                 />
               </div>
             </div>
-            <div id="readme-box" className="slide-3">
-              <div id="readme-top-box">
+            <div className="readme-box slide-3">
+              <div className="readme-top-box">
                 <img
-                  id="readme-logo"
+                 className="readme-logo"
                   alt="a small hamburger style icon of the github readme menu option"
                   src={ReadMeIcon}
                 />
@@ -322,7 +317,7 @@ export default function HomePage() {
                   </a>
                 </p>
               </div>
-              <div id="readme-contents">
+              <div className="readme-contents">
                 <ReadmeViewer
                   username={"paulRacisz"}
                   repository={"sales-table"}
@@ -331,7 +326,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div id="volunteer-box">
+        <div className="volunteer-box">
           <h2 id="volunteer-work"></h2>
           <h2 className="volunteer-header">Volunteer Work</h2>
           <div className="box-flex">
@@ -366,7 +361,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div id="volunteer-box">
+        <div className="volunteer-box">
           <h2 id="open-source-contributions"></h2>
           <h2 className="volunteer-header">Open Source Contributions</h2>
           <div className="box-flex">
