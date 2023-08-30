@@ -33,22 +33,17 @@ init("user_8H2okSIPMyJBrfkGMvZv4");
 
 /*
 --------------------------------------------------------
-TODO:
-
-
-FIX AXE WEB ACCESABILITY ISSUES []
-
-MAKE DOWNLOAD RESUME LINK TO GOOGLE DRIVE OR GOOGLE DOCS []
-
+TODO [X]
 ----------------------------------------------------------
-
-SCRAPPED:
+SCRAPPED [X]
 POSSIBLY ADD CAPTCHA FOR CONTACT FORM
-
 ----------------------------------------------------------
+COMPLETE [X]
+MAKE DOWNLOAD RESUME LINK TO GOOGLE DRIVE OR GOOGLE DOCS [X]
 WRITE MEDIA QUERIES FOR NEW CONTENT [X]
 WRITE MEDIA QUERY TO MAKE THE HAMBURGER MENU A BIT SMALLER [X]
 ADD STICKY HAMBURGER MENU ICON THAT WHEN CLICKED REVEALS A MENU WITH OPTIONS TO GO TO DIFFERENT SECTIONS OF THE WEBSITE:
+FIX AXE WEB ACCESABILITY ISSUES [X]
 EXPERIENCE
 EDUCATION
 PROJECTS
@@ -406,7 +401,9 @@ export default function HomePage() {
         <div id="footer">
           <div className="footer-row">
             <a
-              href={ResumeFile}
+              href="https://docs.google.com/document/d/1TcFwm-35uecysGUgSXm1u5UWp8sAEhNBf7UAJnjU7Iw/edit?usp=sharing"
+              rel="noreferrer"
+              target="_blank"
               download
               id="download"
               className="footerDownload"
