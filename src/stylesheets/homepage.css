@@ -602,6 +602,7 @@ body::-webkit-scrollbar-thumb {
 #sticky-hamburger {
     position: sticky;
     top: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,7 +615,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #hamburger {
-    width:50%;
+    width: 50%;
     height: 30%;
     display: flex;
     transition: 0.2s ease all;
@@ -921,6 +922,11 @@ p>img {
     border-right: none;
     border-top: none;
     width: 100%;
+}
+
+#textinput {
+    max-height: 15em;
+    min-height: 5em;
 }
 
 li {
